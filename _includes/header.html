@@ -1,0 +1,22 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+
+    <a href="{{ '/' | relative_url }}" class="site-title" aria-label="{{ site.author.name }} — home">
+      {{ site.author.name | split: " " | first }}
+      {{ site.author.name | split: " " | last }}
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      {% for link in site.data.navigation %}
+        <a href="{{ link.url | relative_url }}"
+           class="site-nav__link{% if page.url contains link.url %} active{% endif %}"
+           {% if page.url contains link.url %}aria-current="page"{% endif %}>
+          {{ link.title }}
+        </a>
+      {% endfor %}
+    </nav>
+
+  </div>
+</header>

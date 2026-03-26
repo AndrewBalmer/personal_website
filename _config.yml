@@ -1,0 +1,75 @@
+# Site identity
+title: "Andrew Balmer"
+tagline: "Computational Biologist & Data Scientist"
+description: >
+  Personal website of Andrew Balmer - research, publications,
+  projects, and CV.
+url: "https://andrewbalmer.github.io"
+baseurl: "/personal_website"
+
+author:
+  name: "Andrew Jonathan Balmer"
+  email: "Andrew.balmer@hotmail.co.uk"
+  github: "AndrewBalmer"
+  twitter: ""
+  linkedin: "andrew-balmer-7657b35b"
+  orcid: "0000-0001-7446-3428"
+  google_scholar: "fff8gqUAAAAJ"
+  avatar: "/ab69.jpg"
+
+markdown: kramdown
+highlighter: rouge
+theme: null
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+twitter:
+  username: ""
+  card: summary
+
+logo: "/ab69.jpg"
+
+analytics:
+  plausible_domain: ""
+  ga4_id: ""
+
+header_pages:
+  - publications.md
+  - projects.md
+  - cv.md
+  - speaking.md
+  - now.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "Andrew Jonathan Balmer (2025) - CV (industry).docx"
+  - "Andrew Jonathan Balmer (2025) - CV - AZ.docx"
+  - "Andrew Jonathan Balmer (2025) - CV - Microsoft.docx"
+  - "Andrew Jonathan Balmer (2025) - CV - PBioinformatician.docx"
+  - "Andrew Jonathan Balmer (2025) - CV - Sbioinformatician.docx"
+  - "Andrew Jonathan Balmer (2025) - Cover letter - Ellison.docx"
+  - "Andrew Jonathan Balmer (2025) - Cover letter - Microsoft.docx"
+  - "Andrew Jonathan Balmer (2025) - Cover letter - PBioinformatician.docx"
+  - "Andrew Jonathan Balmer (2025) - Cover letter - RP.docx"
+  - "Andrew Jonathan Balmer (2025) - Cover letter - SBioinformatician.docx"
+  - vendor/
+  - .bundle/
+  - scripts/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

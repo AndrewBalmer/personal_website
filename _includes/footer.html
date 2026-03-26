@@ -1,0 +1,49 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="site-footer__inner">
+
+      <p class="site-footer__copy">
+        &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}.
+        Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
+      </p>
+
+      <ul class="site-footer__links" aria-label="Social links">
+        {% if site.author.github and site.author.github != "" %}
+        <li>
+          <a href="https://github.com/{{ site.author.github }}"
+             target="_blank" rel="noopener me" aria-label="GitHub profile">GitHub</a>
+        </li>
+        {% endif %}
+
+        {% if site.author.linkedin and site.author.linkedin != "" %}
+        <li>
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}"
+             target="_blank" rel="noopener me" aria-label="LinkedIn profile">LinkedIn</a>
+        </li>
+        {% endif %}
+
+        {% if site.author.orcid and site.author.orcid != "" %}
+        <li>
+          <a href="https://orcid.org/{{ site.author.orcid }}"
+             target="_blank" rel="noopener me" aria-label="ORCID profile">ORCID</a>
+        </li>
+        {% endif %}
+
+        {% if site.author.google_scholar and site.author.google_scholar != "" %}
+        <li>
+          <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}"
+             target="_blank" rel="noopener" aria-label="Google Scholar profile">Scholar</a>
+        </li>
+        {% endif %}
+
+        {% if site.author.twitter and site.author.twitter != "" %}
+        <li>
+          <a href="https://twitter.com/{{ site.author.twitter }}"
+             target="_blank" rel="noopener me" aria-label="Twitter / X profile">Twitter</a>
+        </li>
+        {% endif %}
+      </ul>
+
+    </div>
+  </div>
+</footer>

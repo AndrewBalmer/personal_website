@@ -1,0 +1,111 @@
+- title: "Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmodium falciparum samples"
+  authors: "**Balmer AJ**, et al."
+  journal: "eLife"
+  year: 2025
+  volume: ""
+  pages: ""
+  doi: "10.7554/eLife.105544"
+  preprint_doi: ""
+  paper_url: "https://elifesciences.org/articles/105544"
+  pdf_url: ""
+  code_url: ""
+  featured: true
+  tags:
+    - malaria genomics
+    - resistance surveillance
+
+- title: "Pf-PeptideFilter"
+  authors: "**Balmer AJ**, et al."
+  journal: "bioRxiv"
+  year: 2025
+  volume: ""
+  pages: ""
+  doi: "10.64898/2025.12.15.694343"
+  preprint_doi: ""
+  paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v1"
+  pdf_url: ""
+  code_url: "https://github.com/malariagen/nf_netMHC_pipeline_analysis"
+  featured: true
+  tags:
+    - vaccine discovery
+    - malaria
+
+- title: "Antimicrobial Resistance Cartography: A Generalisable Framework for the Study of Multivariate Drug Resistance"
+  authors: "**Balmer AJ**, Murray GGR, Lo S, Restif O, Weinert LA"
+  journal: "bioRxiv"
+  year: 2025
+  volume: ""
+  pages: ""
+  doi: "10.1101/2025.09.12.675231"
+  preprint_doi: ""
+  paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
+  pdf_url: ""
+  code_url: "https://github.com/AndrewBalmer/AMR-cartography"
+  featured: true
+  tags:
+    - antimicrobial resistance
+    - statistical modelling
+
+- title: "Emergence of zoonotic and multi-drug resistant Streptococcus suis"
+  authors: "Brizuela J, Murray GGR, Boueroy P, **Balmer AJ**"
+  journal: "bioRxiv"
+  year: 2025
+  volume: ""
+  pages: ""
+  doi: "10.1101/2025.06.30.662319"
+  preprint_doi: ""
+  paper_url: "https://www.biorxiv.org/content/10.1101/2025.06.30.662319v1"
+  pdf_url: ""
+  code_url: ""
+  featured: false
+  tags:
+    - zoonoses
+    - streptococcus
+
+- title: "Pf8: an open dataset of Plasmodium falciparum genome variation in 33,325 worldwide samples"
+  authors: "MalariaGEN, **Balmer AJ**, et al."
+  journal: "Wellcome Open Research"
+  year: 2025
+  volume: ""
+  pages: ""
+  doi: "10.12688/wellcomeopenres.24031.1"
+  preprint_doi: ""
+  paper_url: "https://wellcomeopenresearch.org/articles/10-325"
+  pdf_url: ""
+  code_url: ""
+  featured: false
+  tags:
+    - open data
+    - malaria
+
+- title: "The emergence and diversification of a zoonotic pathogen from within the microbiota of intensively farmed pigs"
+  authors: "Murray GGR, Hossain ASMM, Miller EL, Bruchmann S, **Balmer AJ**, et al."
+  journal: "PNAS"
+  year: 2023
+  volume: ""
+  pages: ""
+  doi: "10.1073/pnas.2307773120"
+  preprint_doi: ""
+  paper_url: "https://www.repository.cam.ac.uk/handle/1810/361461"
+  pdf_url: ""
+  code_url: ""
+  featured: false
+  tags:
+    - pathogen evolution
+    - zoonoses
+
+- title: "Mutation rate dynamics reflect ecological changes in an emerging zoonotic pathogen"
+  authors: "Murray GGR, **Balmer AJ**, et al."
+  journal: "PLOS Genetics"
+  year: 2021
+  volume: ""
+  pages: ""
+  doi: "10.1371/journal.pgen.1009864"
+  preprint_doi: ""
+  paper_url: "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1009864"
+  pdf_url: ""
+  code_url: ""
+  featured: false
+  tags:
+    - mutation rates
+    - pathogen evolution

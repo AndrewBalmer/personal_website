@@ -1,0 +1,175 @@
+// ─── Publication list ─────────────────────────────────────────
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: $sp-6;
+}
+
+.pubs-year {
+  font-size: $fz-lg;
+  font-weight: 700;
+  color: $c-muted;
+  margin-top: $sp-8;
+  margin-bottom: $sp-4;
+  padding-bottom: $sp-2;
+  border-bottom: 1px solid $c-border;
+
+  &:first-of-type { margin-top: 0; }
+}
+
+// ─── Publication card ─────────────────────────────────────────
+.pub-card {
+  padding: $sp-6;
+  border: 1px solid $c-border;
+  border-radius: $radius-lg;
+  background: $c-bg;
+  transition: box-shadow $tr-fast, border-color $tr-fast;
+
+  &:hover {
+    box-shadow: $shadow-sm;
+    border-color: $c-border-strong;
+  }
+}
+
+.pub-authors {
+  font-size: $fz-sm;
+  color: $c-muted;
+  margin-bottom: $sp-2;
+  strong { color: $c-text; }
+}
+
+.pub-title {
+  font-size: $fz-lg;
+  font-weight: 600;
+  line-height: $lh-tight;
+  margin-bottom: $sp-2;
+  a {
+    color: $c-text;
+    text-decoration: none;
+    &:hover { color: $c-accent; }
+  }
+}
+
+.pub-venue {
+  font-size: $fz-sm;
+  color: $c-muted;
+  margin-bottom: $sp-3;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-2;
+}
+
+// ─── Badges ───────────────────────────────────────────────────
+.pub-badge {
+  display: inline-block;
+  font-size: $fz-xs;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2em 0.65em;
+  border-radius: $radius-sm;
+  border: 1px solid $c-border;
+  color: $c-muted;
+  background: $c-bg;
+  text-decoration: none;
+  transition: color $tr-fast, background $tr-fast, border-color $tr-fast;
+
+  &:hover {
+    color: $c-text;
+    border-color: $c-border-strong;
+    background: $c-bg-subtle;
+    text-decoration: none;
+  }
+
+  // Coloured variants — uses literal hex to avoid Sass lighten() deprecation
+  &--doi     { color: #1d4ed8; border-color: #bfdbfe; }
+  &--pdf     { color: #b91c1c; border-color: #fca5a5; }
+  &--preprint{ color: #7c3aed; border-color: #c4b5fd; }
+  &--code    { color: #065f46; border-color: #6ee7b7; }
+
+  &--doi:hover     { background: #eff6ff; border-color: #93c5fd; }
+  &--pdf:hover     { background: #fff1f2; border-color: #fca5a5; }
+  &--preprint:hover{ background: #f5f3ff; border-color: #a78bfa; }
+  &--code:hover    { background: #ecfdf5; border-color: #34d399; }
+}
+
+.pub-tags {
+  margin-top: $sp-3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-1;
+}
+
+.pub-tag {
+  font-size: $fz-xs;
+  padding: 0.15em 0.55em;
+  border-radius: 9999px;
+  background: $c-bg-subtle;
+  color: $c-muted;
+  border: 1px solid $c-border;
+}
+
+// ─── Talk list ────────────────────────────────────────────────
+.talk-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: $sp-6;
+  margin-bottom: $sp-6;
+}
+
+.talk-item {
+  border-left: 3px solid $c-border;
+  padding-left: $sp-4;
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: $sp-2;
+    margin-bottom: $sp-1;
+  }
+
+  &__title { font-size: $fz-base; margin-bottom: $sp-1; line-height: $lh-tight; }
+  &__venue { font-size: $fz-sm; color: $c-muted; margin-bottom: 0; }
+}
+
+// ─── Project grid ─────────────────────────────────────────────
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: $sp-6;
+}
+
+.project-card {
+  padding: $sp-6;
+  border: 1px solid $c-border;
+  border-radius: $radius-lg;
+  background: $c-bg;
+  display: flex;
+  flex-direction: column;
+  gap: $sp-3;
+  transition: box-shadow $tr-fast, border-color $tr-fast;
+
+  &:hover {
+    box-shadow: $shadow-sm;
+    border-color: $c-border-strong;
+  }
+
+  &__title {
+    font-size: $fz-lg;
+    font-weight: 600;
+    a { color: $c-text; text-decoration: none; &:hover { color: $c-accent; } }
+  }
+
+  &__desc {
+    font-size: $fz-sm;
+    color: $c-muted;
+    line-height: $lh-loose;
+    flex: 1;
+  }
+
+  &__links { display: flex; gap: $sp-2; }
+}

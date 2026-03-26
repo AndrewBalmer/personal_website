@@ -1,0 +1,39 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby
+*.gem
+*.rbc
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CV drafts and cover letters — keep only the canonical downloadable CV asset.
+# Any .docx / .pdf dropped in the repo root or elsewhere is excluded.
+*.docx
+*.doc
+
+# Exclude all PDFs except the canonical one in assets/cv/
+*.pdf
+!assets/cv/andrew_balmer_cv.pdf
+!assets/cv/andrew_balmer_cv.docx
+
+# Logs / temp
+*.log
+tmp/

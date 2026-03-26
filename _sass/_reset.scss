@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, figure, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol { list-style: none; }
+
+img, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+table { border-collapse: collapse; }
+
+a { color: inherit; text-decoration-skip-ink: auto; }

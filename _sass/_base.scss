@@ -1,0 +1,150 @@
+html { font-size: 16px; }
+
+body {
+  font-family: $font-body;
+  font-size: $fz-base;
+  line-height: $lh-normal;
+  color: $c-text;
+  background: $c-bg;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ─── Headings ─────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: $lh-tight;
+  color: $c-text;
+}
+h1 { font-size: $fz-4xl; margin-bottom: $sp-4; }
+h2 { font-size: $fz-2xl; margin-bottom: $sp-3; margin-top: $sp-8; }
+h3 { font-size: $fz-xl;  margin-bottom: $sp-2; margin-top: $sp-6; }
+h4 { font-size: $fz-lg;  margin-bottom: $sp-2; }
+
+// ─── Body text ────────────────────────────────────────────────
+p { margin-bottom: $sp-4; }
+
+a {
+  color: $c-accent;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $c-accent-hover;
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $c-accent;
+    outline-offset: 2px;
+    border-radius: $radius-sm;
+  }
+}
+
+// ─── Lists ────────────────────────────────────────────────────
+.content ul, .content ol {
+  list-style: initial;
+  padding-left: $sp-6;
+  margin-bottom: $sp-4;
+  li { margin-bottom: $sp-1; }
+}
+
+// ─── Code ─────────────────────────────────────────────────────
+code {
+  font-family: $font-mono;
+  font-size: 0.875em;
+  background: $c-bg-subtle;
+  border: 1px solid $c-border;
+  padding: 0.1em 0.35em;
+  border-radius: $radius-sm;
+}
+
+pre {
+  font-family: $font-mono;
+  font-size: $fz-sm;
+  background: $c-bg-subtle;
+  border: 1px solid $c-border;
+  border-radius: $radius-md;
+  padding: $sp-4;
+  overflow-x: auto;
+  margin-bottom: $sp-4;
+  code { background: none; border: none; padding: 0; font-size: inherit; }
+}
+
+// ─── Misc ─────────────────────────────────────────────────────
+hr {
+  border: none;
+  border-top: 1px solid $c-border;
+  margin: $sp-8 0;
+}
+
+blockquote {
+  border-left: 3px solid $c-accent;
+  padding: $sp-2 $sp-4;
+  color: $c-muted;
+  font-style: italic;
+  margin-bottom: $sp-4;
+}
+
+// ─── Layout helpers ───────────────────────────────────────────
+.container {
+  max-width: $max-w;
+  margin: 0 auto;
+  padding: 0 $sp-6;
+}
+
+.page-content { padding: $sp-12 0; }
+
+.page-title {
+  font-size: $fz-3xl;
+  margin-bottom: $sp-8;
+  padding-bottom: $sp-4;
+  border-bottom: 2px solid $c-border;
+}
+
+// ─── Accessibility: skip link ──────────────────────────────────
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: $sp-4;
+  z-index: 9999;
+  background: $c-accent;
+  color: #fff;
+  padding: $sp-2 $sp-4;
+  border-radius: $radius-md;
+  font-weight: 600;
+  transition: top $tr-fast;
+  &:focus { top: $sp-2; color: #fff; text-decoration: none; }
+}
+
+// ─── Footer ───────────────────────────────────────────────────
+.site-footer {
+  border-top: 1px solid $c-border;
+  padding: $sp-8 0;
+  margin-top: $sp-16;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $sp-4;
+  }
+
+  &__copy {
+    font-size: $fz-sm;
+    color: $c-muted;
+    margin: 0;
+    a { color: $c-muted; &:hover { color: $c-accent; text-decoration: none; } }
+  }
+
+  &__links {
+    display: flex;
+    gap: $sp-4;
+    a {
+      font-size: $fz-sm;
+      color: $c-muted;
+      text-decoration: none;
+      font-weight: 500;
+      &:hover { color: $c-accent; }
+    }
+  }
+}

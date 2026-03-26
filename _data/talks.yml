@@ -1,0 +1,44 @@
+- title: "Understanding the Global Spread of Artemisinin Resistance"
+  event: "MalariaGEN Journal Club"
+  location: "Virtual"
+  year: 2024
+  type: talk
+  slides: ""
+  video: ""
+  invited: true
+
+- title: "Invited seminar on therapeutic resistance surveillance"
+  event: "UKHSA Therapeutics Group"
+  location: "UK"
+  year: 2023
+  type: seminar
+  slides: ""
+  video: ""
+  invited: true
+
+- title: "Invited seminar on pathogen genomics and resistance dynamics"
+  event: "CDC"
+  location: "USA"
+  year: 2023
+  type: seminar
+  slides: ""
+  video: ""
+  invited: true
+
+- title: "Multivariate methods for the study of drug resistance in streptococci"
+  event: "Wellcome Sanger Institute"
+  location: "Hinxton, Cambridge, UK"
+  year: 2023
+  type: talk
+  slides: ""
+  video: ""
+  invited: true
+
+- title: "GEM Conference poster and flash talk"
+  event: "GEM Conference"
+  location: "UK"
+  year: 2024
+  type: poster
+  slides: ""
+  video: ""
+  invited: false

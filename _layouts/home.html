@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<!-- ── Hero ─────────────────────────────────────────────────── -->
+<section class="hero" aria-label="Introduction">
+  <div class="container">
+    <div class="hero__inner">
+
+      {% assign avatar = page.avatar | default: site.author.avatar %}
+      {% if avatar %}
+      <img src="{{ avatar | relative_url }}"
+           alt="Photo of {{ site.author.name }}"
+           class="hero__avatar"
+           width="120" height="120"
+           loading="eager">
+      {% endif %}
+
+      <div class="hero__text">
+        <h1 class="hero__title">{{ page.hero_title | default: site.author.name }}</h1>
+        <p class="hero__sub">{{ page.hero_sub | default: site.tagline }}</p>
+        <div class="hero__bio">{{ content }}</div>
+        <div class="hero__ctas">
+          <a href="{{ '/publications/' | relative_url }}" class="btn btn--primary">Publications</a>
+          <a href="{{ '/assets/cv/andrew_balmer_cv.docx' | relative_url }}"
+             class="btn btn--outline"
+             target="_blank"
+             rel="noopener">Download CV</a>
+          {% if site.author.github and site.author.github != "" %}
+          <a href="https://github.com/{{ site.author.github }}"
+             class="btn btn--outline"
+             target="_blank"
+             rel="noopener me">GitHub</a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Selected publications ─────────────────────────────────── -->
+{% assign featured_pubs = site.data.publications | where: "featured", true %}
+{% if featured_pubs.size > 0 %}
+<section class="home-section" aria-labelledby="home-pubs-heading">
+  <div class="container">
+    <h2 id="home-pubs-heading" class="home-section__title">Selected Publications</h2>
+    <div class="pub-list">
+      {% for pub in featured_pubs limit: 3 %}
+        {% include pub_card.html pub=pub %}
+      {% endfor %}
+    </div>
+    <p class="home-section__more">
+      <a href="{{ '/publications/' | relative_url }}">View all publications &rarr;</a>
+    </p>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Featured projects ─────────────────────────────────────── -->
+{% assign featured_projects = site.data.projects | where: "featured", true %}
+{% if featured_projects.size > 0 %}
+<section class="home-section" aria-labelledby="home-projects-heading">
+  <div class="container">
+    <h2 id="home-projects-heading" class="home-section__title">Featured Projects</h2>
+    <div class="project-grid">
+      {% for proj in featured_projects limit: 3 %}
+      <article class="project-card">
+        <h3 class="project-card__title">
+          {% if proj.url %}
+            <a href="{{ proj.url }}" target="_blank" rel="noopener">{{ proj.name }}</a>
+          {% elsif proj.github %}
+            <a href="{{ proj.github }}" target="_blank" rel="noopener">{{ proj.name }}</a>
+          {% else %}
+            {{ proj.name }}
+          {% endif %}
+        </h3>
+        <p class="project-card__desc">{{ proj.description }}</p>
+        <div class="project-card__links">
+          {% if proj.github %}
+            <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
+               target="_blank" rel="noopener">GitHub</a>
+          {% endif %}
+          {% if proj.paper_url %}
+            <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi"
+               target="_blank" rel="noopener">Paper</a>
+          {% elsif proj.paper_doi %}
+            <a href="https://doi.org/{{ proj.paper_doi }}" class="pub-badge pub-badge--doi"
+               target="_blank" rel="noopener">Paper</a>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="home-section__more">
+      <a href="{{ '/projects/' | relative_url }}">View all projects &rarr;</a>
+    </p>
+  </div>
+</section>
+{% endif %}

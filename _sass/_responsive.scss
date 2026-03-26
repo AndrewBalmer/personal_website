@@ -1,0 +1,26 @@
+// ─── Tablet (< 768px) ─────────────────────────────────────────
+@media (max-width: 48em) {
+  h1 { font-size: $fz-3xl; }
+  h2 { font-size: $fz-xl; }
+
+  .container { padding: 0 $sp-4; }
+  .project-grid { grid-template-columns: 1fr; }
+
+  .site-nav { gap: 0; }
+  .site-nav__link { padding: $sp-1 $sp-2; font-size: $fz-xs; }
+}
+
+// ─── Mobile (< 480px) ─────────────────────────────────────────
+@media (max-width: 30em) {
+  h1 { font-size: $fz-2xl; }
+
+  .pub-card { padding: $sp-4; }
+  .pub-title { font-size: $fz-base; }
+
+  .page-title { font-size: $fz-2xl; }
+}
+
+// ─── Wide screens (> 1280px) ──────────────────────────────────
+@media (min-width: 80em) {
+  .container { max-width: 58rem; }
+}

@@ -1,0 +1,76 @@
+{% assign pub = include.pub %}
+<article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+
+  <p class="pub-authors">
+    {{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+  </p>
+
+  <h3 class="pub-title" itemprop="name">
+    {% if pub.paper_url %}
+      <a href="{{ pub.paper_url }}"
+         target="_blank"
+         rel="noopener"
+         itemprop="url">{{ pub.title }}</a>
+    {% elsif pub.pdf_url %}
+      <a href="{{ pub.pdf_url }}"
+         target="_blank"
+         rel="noopener"
+         itemprop="url">{{ pub.title }}</a>
+    {% else %}
+      {{ pub.title }}
+    {% endif %}
+  </h3>
+
+  <p class="pub-venue">
+    <em itemprop="isPartOf">{{ pub.journal }}</em>{% if pub.year %},
+    <span itemprop="datePublished">{{ pub.year }}</span>{% endif %}{% if pub.volume %},
+    {{ pub.volume }}{% endif %}{% if pub.pages %},
+    {{ pub.pages }}{% endif %}
+  </p>
+
+  <div class="pub-links">
+    {% if pub.paper_url %}
+    <a href="{{ pub.paper_url }}"
+       class="pub-badge"
+       target="_blank"
+       rel="noopener">Paper</a>
+    {% endif %}
+
+    {% if pub.doi %}
+    <a href="https://doi.org/{{ pub.doi }}"
+       class="pub-badge pub-badge--doi"
+       target="_blank"
+       rel="noopener">DOI</a>
+    {% endif %}
+
+    {% if pub.preprint_doi %}
+    <a href="https://doi.org/{{ pub.preprint_doi }}"
+       class="pub-badge pub-badge--preprint"
+       target="_blank"
+       rel="noopener">Preprint</a>
+    {% endif %}
+
+    {% if pub.pdf_url and pub.pdf_url != pub.paper_url %}
+    <a href="{{ pub.pdf_url }}"
+       class="pub-badge pub-badge--pdf"
+       target="_blank"
+       rel="noopener">PDF</a>
+    {% endif %}
+
+    {% if pub.code_url %}
+    <a href="{{ pub.code_url }}"
+       class="pub-badge pub-badge--code"
+       target="_blank"
+       rel="noopener">Code</a>
+    {% endif %}
+  </div>
+
+  {% if pub.tags.size > 0 %}
+  <div class="pub-tags" aria-label="Tags">
+    {% for tag in pub.tags %}
+    <span class="pub-tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</article>

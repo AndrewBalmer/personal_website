@@ -1,0 +1,55 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Bi-weekly gate
+        if: github.event_name == 'schedule'
+        run: |
+          anchor_week="2026-03-02"
+          now_week=$(date +%G-%V)
+          anchor_iso=$(date -u -d "$anchor_week" +%G-%V)
+          now_year=$(echo "$now_week" | cut -d- -f1)
+          now_num=$(echo "$now_week" | cut -d- -f2 | sed 's/^0*//')
+          anchor_year=$(echo "$anchor_iso" | cut -d- -f1)
+          anchor_num=$(echo "$anchor_iso" | cut -d- -f2 | sed 's/^0*//')
+          delta=$(( (now_year - anchor_year) * 53 + (now_num - anchor_num) ))
+          if [ $((delta % 2)) -ne 0 ]; then
+            echo "Not a bi-weekly run window; skipping."
+            echo "SKIP_UPDATE=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Setup Ruby
+        if: env.SKIP_UPDATE != 'true'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Update publications data
+        if: env.SKIP_UPDATE != 'true'
+        run: ruby scripts/update_publications.rb
+
+      - name: Commit changes
+        if: env.SKIP_UPDATE != 'true'
+        run: |
+          if git diff --quiet -- _data/publications.yml; then
+            echo "No publication updates to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/publications.yml
+          git commit -m "chore: update publications data"
+          git push
