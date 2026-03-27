@@ -7,6 +7,7 @@
   github: "https://github.com/malariagen/pf-peptidefilter"
   paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
   paper_doi: "10.64898/2025.12.15.694343"
+  repo_visibility: "public"
   year: 2025
   status: active
   featured: true
@@ -24,6 +25,7 @@
   github: "https://github.com/AndrewBalmer/AMR-cartography"
   paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
   paper_doi: "10.1101/2025.09.12.675231"
+  repo_visibility: "public"
   year: 2025
   status: active
   featured: true
@@ -41,6 +43,7 @@
   github: ""
   paper_url: ""
   paper_doi: ""
+  repo_visibility: "private"
   year: 2025
   status: active
   featured: true
@@ -57,6 +60,7 @@
   github: ""
   paper_url: ""
   paper_doi: ""
+  repo_visibility: "private"
   year: 2025
   status: active
   featured: false
@@ -74,6 +78,7 @@
   github: ""
   paper_url: "https://elifesciences.org/articles/105544"
   paper_doi: "10.7554/eLife.105544"
+  repo_visibility: ""
   year: 2025
   status: active
   featured: false
@@ -90,6 +95,7 @@
   github: ""
   paper_url: ""
   paper_doi: ""
+  repo_visibility: "private"
   year: 2025
   status: archived
   featured: false
@@ -106,6 +112,7 @@
   github: ""
   paper_url: ""
   paper_doi: ""
+  repo_visibility: "private"
   year: 2024
   status: archived
   featured: false

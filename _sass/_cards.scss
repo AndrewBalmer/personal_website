@@ -94,6 +94,8 @@
   &--pdf:hover     { background: #fff1f2; border-color: #fca5a5; }
   &--preprint:hover{ background: #f5f3ff; border-color: #a78bfa; }
   &--code:hover    { background: #ecfdf5; border-color: #34d399; }
+  &--muted         { color: #475569; border-color: #cbd5e1; background: #f8fafc; }
+  &--muted:hover   { color: #475569; border-color: #cbd5e1; background: #f8fafc; }
 }
 
 .pub-tags {
@@ -171,5 +173,5 @@
     flex: 1;
   }
 
-  &__links { display: flex; gap: $sp-2; }
+  &__links { display: flex; flex-wrap: wrap; gap: $sp-2; }
 }

@@ -80,6 +80,8 @@ layout: default
           {% if proj.github != "" %}
             <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
                target="_blank" rel="noopener">GitHub</a>
+          {% elsif proj.repo_visibility == "private" %}
+            <span class="pub-badge pub-badge--muted">Private repo</span>
           {% endif %}
           {% if proj.paper_url != "" %}
             <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi"
