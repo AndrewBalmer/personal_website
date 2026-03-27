@@ -22,9 +22,9 @@
   pages: ""
   doi: "10.64898/2025.12.15.694343"
   preprint_doi: ""
-  paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v1"
+  paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
   pdf_url: ""
-  code_url: "https://github.com/malariagen/nf_netMHC_pipeline_analysis"
+  code_url: "https://github.com/malariagen/pf-peptidefilter"
   featured: true
   tags:
     - vaccine discovery

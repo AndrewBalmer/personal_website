@@ -66,19 +66,19 @@ description: "Curriculum vitæ of Andrew Balmer — positions, education, public
     <div class="cv-entry__body">
       <p style="margin-bottom:0.15rem;">
         {{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}.
-        {% if pub.paper_url %}
+        {% if pub.paper_url != blank %}
           "<strong><a href="{{ pub.paper_url }}" target="_blank" rel="noopener">{{ pub.title }}</a></strong>."
         {% else %}
           "<strong>{{ pub.title }}</strong>."
         {% endif %}
         <em>{{ pub.journal }}</em>{% if pub.volume %} {{ pub.volume }}{% endif %}{% if pub.pages %}: {{ pub.pages }}{% endif %}.
-        {% if pub.paper_url %}
+        {% if pub.paper_url != blank %}
           <a href="{{ pub.paper_url }}" target="_blank" rel="noopener">Paper</a>
         {% endif %}
-        {% if pub.doi %}
+        {% if pub.doi != blank %}
           <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>
         {% endif %}
-        {% if pub.code_url %}
+        {% if pub.code_url != blank %}
           <a href="{{ pub.code_url }}" target="_blank" rel="noopener">Code</a>
         {% endif %}
       </p>

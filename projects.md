@@ -12,9 +12,9 @@ description: "Software, tools, and pipelines developed by Andrew Balmer."
   {% for proj in active %}
   <article class="project-card">
     <h2 class="project-card__title">
-      {% if proj.url %}
+      {% if proj.url != blank %}
         <a href="{{ proj.url }}" target="_blank" rel="noopener">{{ proj.name }}</a>
-      {% elsif proj.github %}
+      {% elsif proj.github != blank %}
         <a href="{{ proj.github }}" target="_blank" rel="noopener">{{ proj.name }}</a>
       {% else %}
         {{ proj.name }}
@@ -22,20 +22,20 @@ description: "Software, tools, and pipelines developed by Andrew Balmer."
     </h2>
     <p class="project-card__desc">{{ proj.description }}</p>
     <div class="project-card__links">
-      {% if proj.github %}
+      {% if proj.github != blank %}
         <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
            target="_blank" rel="noopener">GitHub</a>
       {% endif %}
-      {% if proj.paper_url %}
+      {% if proj.paper_url != blank %}
         <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi"
            target="_blank" rel="noopener">Paper</a>
-      {% elsif proj.paper_doi %}
+      {% elsif proj.paper_doi != blank %}
         <a href="https://doi.org/{{ proj.paper_doi }}" class="pub-badge pub-badge--doi"
            target="_blank" rel="noopener">Paper</a>
       {% endif %}
-      {% if proj.url %}
+      {% if proj.url != blank %}
         <a href="{{ proj.url }}" class="pub-badge"
-           target="_blank" rel="noopener">Docs</a>
+           target="_blank" rel="noopener">Website</a>
       {% endif %}
     </div>
     {% if proj.tags.size > 0 %}
@@ -54,7 +54,7 @@ description: "Software, tools, and pipelines developed by Andrew Balmer."
   {% for proj in archived %}
   <article class="project-card" style="opacity: 0.75;">
     <h2 class="project-card__title">
-      {% if proj.github %}
+      {% if proj.github != blank %}
         <a href="{{ proj.github }}" target="_blank" rel="noopener">{{ proj.name }}</a>
       {% else %}
         {{ proj.name }}
@@ -62,14 +62,14 @@ description: "Software, tools, and pipelines developed by Andrew Balmer."
     </h2>
     <p class="project-card__desc">{{ proj.description }}</p>
     <div class="project-card__links">
-      {% if proj.github %}
+      {% if proj.github != blank %}
         <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
            target="_blank" rel="noopener">GitHub</a>
       {% endif %}
-      {% if proj.paper_url %}
+      {% if proj.paper_url != blank %}
         <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi"
            target="_blank" rel="noopener">Paper</a>
-      {% elsif proj.paper_doi %}
+      {% elsif proj.paper_doi != blank %}
         <a href="https://doi.org/{{ proj.paper_doi }}" class="pub-badge pub-badge--doi"
            target="_blank" rel="noopener">Paper</a>
       {% endif %}

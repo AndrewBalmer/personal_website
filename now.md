@@ -18,7 +18,7 @@ updated: "March 2026"
 ## Recent
 
 - Led a large-scale analysis of more than 100,000 *Plasmodium falciparum* samples to investigate the global rise of artemisinin resistance.
-- Co-led development of PepExplorer, a peptide vaccine discovery platform integrating genomic and immunological evidence.
+- Co-led development of Pf-PeptideFilter (formerly PepExplorer), a peptide vaccine discovery platform integrating genomic and immunological evidence.
 - Delivered invited talks for public health and genomics audiences, including CDC, UKHSA, and Wellcome Sanger Institute groups.
 
 ## Reading
