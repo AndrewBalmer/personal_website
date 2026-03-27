@@ -39,6 +39,69 @@ layout: default
   </div>
 </section>
 
+<!-- ── Research snapshots ───────────────────────────────────── -->
+{% assign highlights = site.data.research_highlights %}
+{% if highlights.size > 0 %}
+<section class="home-section home-section--spotlight" aria-labelledby="home-snapshots-heading">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-heading__eyebrow">Research Snapshots</p>
+      <h2 id="home-snapshots-heading" class="home-section__title">Recent work, shown rather than just listed</h2>
+      <p class="section-heading__deck">
+        Selected figures and visual fragments from recent papers, spanning global malaria surveillance,
+        pathogen genomics, and quantitative methods for antimicrobial resistance.
+      </p>
+    </div>
+
+    <div class="snapshot-grid">
+      {% for item in highlights %}
+      <article class="snapshot-card{% if forloop.first %} snapshot-card--lead{% endif %}">
+        <div class="snapshot-card__media{% if item.media_style == 'banner' %} snapshot-card__media--banner{% endif %}">
+          <img src="{{ item.image | relative_url }}"
+               alt="{{ item.alt }}"
+               loading="lazy">
+        </div>
+
+        <div class="snapshot-card__body">
+          <div class="snapshot-card__topline">
+            <p class="snapshot-card__eyebrow">{{ item.category }}</p>
+            {% if item.metric_value %}
+            <div class="snapshot-card__metric" aria-label="{{ item.metric_label }}">
+              <strong>{{ item.metric_value }}</strong>
+              <span>{{ item.metric_label }}</span>
+            </div>
+            {% endif %}
+          </div>
+
+          <h3 class="snapshot-card__title">{{ item.title }}</h3>
+          <p class="snapshot-card__summary">{{ item.summary }}</p>
+
+          <div class="snapshot-card__links">
+            {% if item.paper_url %}
+            <a href="{{ item.paper_url }}"
+               class="pub-badge pub-badge--doi"
+               target="_blank"
+               rel="noopener">{{ item.paper_label | default: "Paper" }}</a>
+            {% endif %}
+            {% if item.code_url %}
+            <a href="{{ item.code_url }}"
+               class="pub-badge pub-badge--code"
+               target="_blank"
+               rel="noopener">Code</a>
+            {% endif %}
+          </div>
+
+          {% if item.source_note %}
+          <p class="snapshot-card__source">{{ item.source_note }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <!-- ── Selected publications ─────────────────────────────────── -->
 {% assign featured_pubs = site.data.publications | where: "featured", true %}
 {% if featured_pubs.size > 0 %}

@@ -1,0 +1,44 @@
+- category: "Genomic surveillance"
+  title: "Tracking artemisinin resistance across more than 100,000 samples"
+  summary: >
+    A global synthesis linking parasite genetics, geography, and resistance
+    dynamics at surveillance scale, with an emphasis on signals that matter for
+    real-world genomic monitoring.
+  image: "/assets/images/research/artemisinin-resistance-map.jpg"
+  alt: "Global resistance map figure from the eLife paper on artemisinin resistance."
+  paper_url: "https://elifesciences.org/articles/105544"
+  paper_label: "eLife 2025"
+  source_note: "Figure 1 from Understanding the global rise of artemisinin resistance"
+  metric_value: "100k+"
+  metric_label: "samples synthesised"
+  media_style: "cover"
+
+- category: "Population genomics"
+  title: "Genomic context for resistance interpretation"
+  summary: >
+    A figure-led view of how population structure, mutation patterns, and
+    global genomic context sharpen interpretation of antimalarial resistance.
+  image: "/assets/images/research/artemisinin-genomics-overview.jpg"
+  alt: "Genomics overview figure from the eLife paper on artemisinin resistance."
+  paper_url: "https://elifesciences.org/articles/105544"
+  paper_label: "Paper"
+  source_note: "Figure 2 from Understanding the global rise of artemisinin resistance"
+  metric_value: "Global"
+  metric_label: "genomic context"
+  media_style: "cover"
+
+- category: "Quantitative methods"
+  title: "AMR cartography for multivariate resistance phenotypes"
+  summary: >
+    A methods-focused snapshot from recent work on modelling complex resistance
+    landscapes, designed to bridge exploratory visualisation, uncertainty, and
+    genotype-phenotype mapping.
+  image: "/assets/images/research/amr-cartography-graphic-1.gif"
+  alt: "Figure thumbnail banner from the AMR Cartography bioRxiv preprint."
+  paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
+  paper_label: "bioRxiv 2025"
+  code_url: "https://github.com/AndrewBalmer/AMR-cartography"
+  source_note: "Article thumbnail from Antimicrobial Resistance Cartography"
+  metric_value: "Framework"
+  metric_label: "for multivariate AMR"
+  media_style: "banner"
