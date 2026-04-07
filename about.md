@@ -7,8 +7,7 @@ description: "Short bios, profile information, and contact details for Andrew Ba
 {% assign profile = site.data.profile %}
 
 <p style="font-size: 1rem; color: #475569; max-width: 46rem;">
-  Short bio versions for press, seminars, collaborations, and job applications,
-  together with current affiliations and direct contact details.
+  Short bio, current affiliations, and direct contact details.
 </p>
 
 <div class="pub-links" style="margin: 0 0 2rem;">
@@ -32,6 +31,10 @@ description: "Short bios, profile information, and contact details for Andrew Ba
         <p>{{ profile.current_role.title }}, <a href="{{ profile.current_role.institution_url }}" target="_blank" rel="noopener">{{ profile.current_role.institution }}</a></p>
       </div>
       <div class="project-detail__meta-card">
+        <h4>Current group</h4>
+        <p><a href="{{ profile.current_role.group_url }}" target="_blank" rel="noopener">{{ profile.current_role.group }}</a></p>
+      </div>
+      <div class="project-detail__meta-card">
         <h4>Training</h4>
         <p>{{ profile.education.degree }}, <a href="{{ profile.education.institution_url }}" target="_blank" rel="noopener">{{ profile.education.institution }}</a> ({{ profile.education.years }})</p>
       </div>
@@ -45,29 +48,12 @@ description: "Short bios, profile information, and contact details for Andrew Ba
   <article class="project-detail">
     <div class="project-detail__header">
       <div>
-        <p class="project-detail__eyebrow">Bio versions</p>
-        <h2 class="project-detail__title">Ready-to-use bios</h2>
+        <p class="project-detail__eyebrow">Bio</p>
+        <h2 class="project-detail__title">Short bio</h2>
       </div>
     </div>
 
-    <div class="project-detail__meta-grid">
-      <div class="project-detail__meta-card">
-        <h4>Short bio</h4>
-        <p>{{ profile.bios.short }}</p>
-      </div>
-      <div class="project-detail__meta-card">
-        <h4>Press / media bio</h4>
-        <p>{{ profile.bios.press }}</p>
-      </div>
-      <div class="project-detail__meta-card">
-        <h4>Talks / seminar bio</h4>
-        <p>{{ profile.bios.talks }}</p>
-      </div>
-      <div class="project-detail__meta-card">
-        <h4>Jobs / applications bio</h4>
-        <p>{{ profile.bios.jobs }}</p>
-      </div>
-    </div>
+    <p class="project-detail__summary">{{ profile.bio }}</p>
   </article>
 
   <article class="project-detail">
@@ -100,7 +86,7 @@ description: "Short bios, profile information, and contact details for Andrew Ba
         <h4>Selected collaborators</h4>
         <ul class="project-detail__highlights">
           {% for item in profile.selected_collaborators %}
-          <li>{{ item }}</li>
+          <li><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>

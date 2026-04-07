@@ -4,6 +4,8 @@ current_role:
   title: "Senior Genomic Surveillance Data Scientist"
   institution: "Wellcome Sanger Institute"
   institution_url: "https://www.sanger.ac.uk/"
+  group: "Bryant Group"
+  group_url: "https://www.sanger.ac.uk/group/bryant-group/"
   location: "Hinxton, Cambridge, UK"
 
 education:
@@ -23,25 +25,33 @@ contact:
 
 currently_open_to: >
   Collaborative research, scientific software projects, invited talks, and
-  computational biology or genomics roles that combine rigorous quantitative
-  work with real-world public-health impact.
+  academic or translational genomics work with clear public-health impact.
 
 collaboration_themes:
-  - "Pathogen genomic surveillance and infectious disease data science"
-  - "Antimicrobial resistance modelling and genotype-phenotype analysis"
-  - "Reproducible bioinformatics workflows, pipelines, and scientific software"
-  - "Translational research at the interface of method development and public health"
+  - "Malaria genomic surveillance"
+  - "AMR and genotype-phenotype modelling"
+  - "Respiratory microbiome genomics"
+  - "Reproducible scientific software"
 
 selected_collaborators:
-  - "Gemma G. R. Murray"
-  - "Lucy A. Weinert"
-  - "Jacob Almagro Garcia"
-  - "Richard D. Pearson"
-  - "Cristina V. Ariani"
+  - name: "Josie Bryant"
+    url: "https://www.sanger.ac.uk/group/bryant-group/"
+  - name: "Gemma G. R. Murray"
+    url: "https://orcid.org/0000-0002-9531-1711"
+  - name: "Lucy A. Weinert"
+    url: "https://orcid.org/0000-0002-9279-6012"
+  - name: "Jacob Almagro-Garcia"
+    url: "https://orcid.org/0000-0002-0595-7333"
+  - name: "Richard D. Pearson"
+    url: "https://orcid.org/0000-0002-7386-3566"
+  - name: "Cristina V. Ariani"
+    url: "https://pubmed.ncbi.nlm.nih.gov/?term=Ariani+CV%5BAuthor%5D"
 
 proof_points:
   - value: "Wellcome Sanger"
     label: "current institute"
+  - value: "Bryant Group"
+    label: "current research group"
   - value: "Cambridge PhD"
     label: "quantitative biology training"
   - value: "BBSRC funded"
@@ -49,26 +59,11 @@ proof_points:
   - value: "Invited talks"
     label: "CDC, UKHSA, Sanger"
 
-bios:
-  short: >
-    Andrew Balmer is a computational biologist and genomic data scientist whose
-    work focuses on pathogen genomics, antimicrobial resistance, and
-    reproducible scientific software for global health research.
-  press: >
-    Andrew Balmer is a computational biologist at the Wellcome Sanger
-    Institute. His research combines large-scale pathogen genomics,
-    multivariate statistical modelling, and scientific software to study
-    infectious disease evolution, resistance surveillance, and translational
-    decision-making in public health.
-  talks: >
-    Andrew Balmer is a computational biologist and genomic data scientist at
-    the Wellcome Sanger Institute. He develops quantitative methods and
-    reproducible workflows for pathogen genomics, with recent work spanning
-    artemisinin resistance surveillance, antimicrobial resistance cartography,
-    and vaccine-target discovery.
-  jobs: >
-    Andrew Balmer is a computational biologist trained at the University of
-    Cambridge and currently based at the Wellcome Sanger Institute. He works
-    across genomic epidemiology, quantitative modelling, and scientific
-    software, with an emphasis on building reproducible tools and analyses that
-    support high-impact research and public-health applications.
+bio: >
+  Andrew Balmer is a computational biologist and genomic data scientist at the
+  Wellcome Sanger Institute, where he is currently working in Josie Bryant's
+  group. His research combines pathogen genomics, antimicrobial resistance
+  modelling, genome-wide association analysis, and reproducible scientific
+  software, with recent work spanning artemisinin resistance surveillance,
+  multivariate AMR cartography, respiratory microbiome projects, and
+  vaccine-target discovery.

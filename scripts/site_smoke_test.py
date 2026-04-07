@@ -9,7 +9,7 @@ import requests
 
 CHECKS = [
     ("/", "Research Snapshots"),
-    ("/about/", "Ready-to-use bios"),
+    ("/about/", "Short bio"),
     ("/research/", "Research Gallery"),
     ("/publications/", "listed publications"),
     ("/projects/", "Project Briefs"),

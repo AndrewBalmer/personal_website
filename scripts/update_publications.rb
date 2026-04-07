@@ -40,7 +40,7 @@ end
 def clean_doi(doi)
   return '' if doi.nil? || doi.empty?
 
-  doi.sub(%r{^https?://(dx\.)?doi\.org/}i, '')
+  doi.sub(%r{^https?://(dx\.)?doi\.org/}i, '').downcase
 end
 
 def author_string(authorships, highlight_substring)

@@ -32,50 +32,83 @@
   metric_label: "for multivariate AMR"
   media_style: "banner"
 
-- category: "Population genomics"
-  title: "Genomic context for resistance interpretation"
+- category: "Resistance trajectories"
+  title: "Logistic trajectories for rising kelch13 resistance"
   summary: >
-    A figure-led view of how population structure, mutation patterns, and
-    global genomic context sharpen interpretation of antimalarial resistance.
-  image: "/assets/images/research/artemisinin-genomics-overview.jpg"
-  alt: "Genomics overview figure from the eLife paper on artemisinin resistance."
+    Figure-led view of how WHO-validated and candidate kelch13 markers have
+    risen across Southeast Asia and parts of East and Northeast Africa.
+  image: "/assets/images/research/artemisinin-figure-8.jpg"
+  alt: "Figure 8 from the eLife paper on artemisinin resistance."
   paper_url: "https://elifesciences.org/articles/105544"
+  paper_label: "Figure 8"
+  project_url: "/publications/#global-artemisinin-resistance"
+  project_label: "Publication details"
+  source_note: "Figure 8 from Understanding the global rise of artemisinin resistance"
+  metric_value: "Figure 8"
+  metric_label: "logistic fits"
+  media_style: "cover"
+
+- category: "Vaccine target discovery"
+  title: "Pf-PeptideFilter turns peptide prioritisation into an interactive workflow"
+  summary: >
+    Interface-level view of the filtering workflow used to move from large
+    peptide catalogues to more interpretable malaria vaccine candidates.
+  image: "/assets/images/research/pf-peptidefilter-figure-2.png"
+  alt: "Figure 2 from the Pf-PeptideFilter bioRxiv preprint."
+  paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
   paper_label: "Figure 2"
-  project_url: "/publications/#global-artemisinin-resistance"
-  project_label: "Publication details"
-  source_note: "Figure 2 from Understanding the global rise of artemisinin resistance"
-  metric_value: "Global"
-  metric_label: "genomic context"
-  media_style: "cover"
-
-- category: "Geographic signal"
-  title: "Regional structure and resistance geography"
-  summary: >
-    Figure-led view into how genomic patterns separate across regions and help
-    situate resistance-associated variation in a broader population context.
-  image: "/assets/images/research/artemisinin-geography-patterns.jpg"
-  alt: "Figure 3 from the eLife paper on artemisinin resistance."
-  paper_url: "https://elifesciences.org/articles/105544"
-  paper_label: "Figure 3"
-  project_url: "/projects/#global-artemisinin-resistance-meta-analysis"
+  code_url: "https://github.com/malariagen/pf-peptidefilter"
+  project_url: "/projects/#pf-peptidefilter"
   project_label: "Project brief"
-  source_note: "Figure 3 from Understanding the global rise of artemisinin resistance"
-  metric_value: "Regional"
-  metric_label: "population structure"
+  source_note: "Figure 2 from Pf-PeptideFilter"
+  metric_value: "Live"
+  metric_label: "public app"
   media_style: "cover"
 
-- category: "Haplotype analysis"
-  title: "Resistance-associated haplotypes in genomic context"
+- category: "Zoonotic emergence"
+  title: "Genome reduction tracks pathogenicity in pig-associated S. suis"
   summary: >
-    A closer look at the haplotype structure and comparative genomic signals
-    that sit behind resistance interpretation in large-scale parasite datasets.
-  image: "/assets/images/research/artemisinin-haplotype-structure.jpg"
-  alt: "Figure 4 from the eLife paper on artemisinin resistance."
-  paper_url: "https://elifesciences.org/articles/105544"
-  paper_label: "Figure 4"
-  project_url: "/publications/#global-artemisinin-resistance"
+    Comparative view of how genome size and lineage-specific trajectories
+    align with disease association in a zoonotic pig pathogen.
+  image: "/assets/images/research/pigs-pnas-figure-5.png"
+  alt: "Figure 5 from the PNAS paper on zoonotic pathogen emergence in intensively farmed pigs."
+  paper_url: "https://www.repository.cam.ac.uk/handle/1810/361461"
+  paper_label: "Figure 5"
+  project_url: "/publications/#zoonotic-pathogen-diversification"
   project_label: "Publication details"
-  source_note: "Figure 4 from Understanding the global rise of artemisinin resistance"
-  metric_value: "Comparative"
-  metric_label: "haplotype view"
+  source_note: "Figure 5 from The emergence and diversification of a zoonotic pathogen from within the microbiota of intensively farmed pigs"
+  metric_value: "PNAS"
+  metric_label: "2023"
+  media_style: "cover"
+
+- category: "Evolutionary dynamics"
+  title: "Mutation-rate shifts mirror ecological change"
+  summary: >
+    Comparative summary of how mutation rate, genome size, and disease
+    association separate across Streptococcus suis clades.
+  image: "/assets/images/research/mutation-rate-dynamics-figure-1.png"
+  alt: "Figure 1 from the PLOS Genetics paper on mutation rate dynamics in an emerging zoonotic pathogen."
+  paper_url: "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1009864"
+  paper_label: "Figure 1"
+  project_url: "/publications/#mutation-rate-dynamics"
+  project_label: "Publication details"
+  source_note: "Figure 1 from Mutation rate dynamics reflect ecological changes in an emerging zoonotic pathogen"
+  metric_value: "PLOS Gen."
+  metric_label: "2021"
+  media_style: "cover"
+
+- category: "AMR in S. suis"
+  title: "Resistant PBP types align with elevated beta-lactam MICs"
+  summary: >
+    Figure-led snapshot of the relationship between PBP-type distance and
+    beta-lactam susceptibility in emerging zoonotic Streptococcus suis lineages.
+  image: "/assets/images/research/ssuis-lineages-figure-5.png"
+  alt: "Figure 5 from the Clinical Microbiology and Infection paper on zoonotic and multidrug-resistant Streptococcus suis lineages."
+  paper_url: "https://www.repository.cam.ac.uk/handle/1810/400512"
+  paper_label: "Figure 5"
+  project_url: "/publications/#zoonotic-streptococcus-suis-lineages"
+  project_label: "Publication details"
+  source_note: "Figure 5 from Emergence of novel zoonotic and multi-drug resistant Streptococcus suis lineages"
+  metric_value: "Figure 5"
+  metric_label: "PBP types"
   media_style: "cover"

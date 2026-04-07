@@ -166,9 +166,9 @@ description: "Curriculum vitæ of Andrew Balmer — positions, education, public
   <h2 class="cv-section__title">Skills &amp; Technologies</h2>
   <dl class="cv-skills">
     {% for group in cv.skills %}
-    <div class="cv-entry">
-      <dt class="cv-entry__year">{{ group.category }}</dt>
-      <dd class="cv-entry__body" style="margin:0;">
+    <div class="cv-skill-entry">
+      <dt class="cv-skill-entry__label">{{ group.category }}</dt>
+      <dd class="cv-skill-entry__body" style="margin:0;">
         <p style="margin:0;">{{ group.items }}</p>
       </dd>
     </div>

@@ -4,7 +4,7 @@ layout: default
 {% assign profile = site.data.profile %}
 {% assign highlights = site.data.research_highlights %}
 {% assign featured_pubs = site.data.publications | where: "featured", true %}
-{% assign active_projects = site.data.projects | where: "status", "active" | sort: "year" | reverse %}
+{% assign featured_projects = site.data.projects | where: "status", "active" | where: "featured", true | sort: "year" | reverse %}
 {% assign invited_talks = site.data.talks | where: "invited", true | sort: "year" | reverse %}
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->
@@ -27,6 +27,9 @@ layout: default
         <p class="hero__role">
           {{ profile.current_role.title }} at
           <a href="{{ profile.current_role.institution_url }}" target="_blank" rel="noopener">{{ profile.current_role.institution }}</a>
+          {% if profile.current_role.group %}
+          · <a href="{{ profile.current_role.group_url }}" target="_blank" rel="noopener">{{ profile.current_role.group }}</a>
+          {% endif %}
           · {{ profile.contact.location }}
         </p>
         <div class="hero__bio">{{ content }}</div>
@@ -73,7 +76,7 @@ layout: default
     </div>
 
     <div class="snapshot-grid">
-      {% for item in highlights limit: 4 %}
+      {% for item in highlights %}
       <article class="snapshot-card{% if forloop.first %} snapshot-card--lead{% endif %}">
         <div class="snapshot-card__media{% if item.media_style == 'banner' %} snapshot-card__media--banner{% endif %}">
           <img src="{{ item.image | relative_url }}"
@@ -146,7 +149,7 @@ layout: default
 {% endif %}
 
 <!-- ── Selected software ─────────────────────────────────────── -->
-{% if active_projects.size > 0 %}
+{% if featured_projects.size > 0 %}
 <section class="home-section" aria-labelledby="home-software-heading">
   <div class="container">
     <div class="section-heading">
@@ -158,7 +161,7 @@ layout: default
     </div>
 
     <div class="software-strip">
-      {% for proj in active_projects limit: 4 %}
+      {% for proj in featured_projects limit: 4 %}
       {% assign brief_url = '/projects/#' | append: proj.slug | relative_url %}
       <article class="software-card">
         <div class="software-card__header">
@@ -223,6 +226,12 @@ layout: default
         <p class="talk-card__type">{{ talk.type | capitalize }} · {{ talk.year }}</p>
         <h3 class="talk-card__title">{{ talk.title }}</h3>
         <p class="talk-card__venue">{{ talk.event }}{% if talk.location %} · {{ talk.location }}{% endif %}</p>
+        {% if talk.slides or talk.video %}
+        <div class="pub-links" style="margin-top: 0.4rem;">
+          {% if talk.slides %}<a href="{{ talk.slides }}" class="pub-badge" target="_blank" rel="noopener">Slides</a>{% endif %}
+          {% if talk.video %}<a href="{{ talk.video }}" class="pub-badge pub-badge--preprint" target="_blank" rel="noopener">Video</a>{% endif %}
+        </div>
+        {% endif %}
       </article>
       {% endfor %}
     </div>

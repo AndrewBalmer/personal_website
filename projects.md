@@ -59,41 +59,6 @@ description: "Software, tools, and pipelines developed by Andrew Balmer."
 </div>
 {% endif %}
 
-{% if archived.size > 0 %}
-<h2 class="pubs-year" style="margin-top: 3rem;">Past &amp; Archived</h2>
-<div class="project-grid">
-  {% for proj in archived %}
-  {% assign brief_href = '#' | append: proj.slug %}
-  <article class="project-card" style="opacity: 0.75;">
-    <h2 class="project-card__title">
-      {% if proj.github != "" %}
-        <a href="{{ proj.github }}" target="_blank" rel="noopener">{{ proj.name }}</a>
-      {% else %}
-        <a href="{{ brief_href }}">{{ proj.name }}</a>
-      {% endif %}
-    </h2>
-    <p class="project-card__desc">{{ proj.description }}</p>
-    <div class="project-card__links">
-      {% if proj.github != "" %}
-        <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
-           target="_blank" rel="noopener">GitHub</a>
-      {% elsif proj.repo_visibility == "private" %}
-        <span class="pub-badge pub-badge--muted">Private repo</span>
-      {% endif %}
-      {% if proj.paper_url != "" %}
-        <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi"
-           target="_blank" rel="noopener">Paper</a>
-      {% elsif proj.paper_doi != "" %}
-        <a href="https://doi.org/{{ proj.paper_doi }}" class="pub-badge pub-badge--doi"
-           target="_blank" rel="noopener">Paper</a>
-      {% endif %}
-      <a href="{{ brief_href }}" class="pub-badge pub-badge--muted">Project brief</a>
-    </div>
-  </article>
-  {% endfor %}
-</div>
-{% endif %}
-
 {% assign all_projects = active | concat: archived %}
 {% if all_projects.size > 0 %}
 <h2 class="pubs-year" style="margin-top: 3rem;">Project Briefs</h2>

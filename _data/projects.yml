@@ -4,7 +4,7 @@
     Peptide vaccine discovery platform for Plasmodium falciparum, formerly
     PepExplorer, combining large-scale MHC binding prediction with
     population-scale genomic evidence.
-  url: ""
+  url: "https://pf-peptidefilter.streamlit.app/"
   github: "https://github.com/malariagen/pf-peptidefilter"
   paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
   paper_doi: "10.64898/2025.12.15.694343"
@@ -16,13 +16,14 @@
     evidence so candidate lists can be filtered in a more biologically
     informed way.
   current_status: >
-    Public code and preprint are available. The interactive app itself is not
-    currently exposed as a fully public production service.
+    Public code, preprint, and interactive Streamlit app are all available as
+    active public outputs.
   public_access: >
-    Visitors can inspect the codebase and manuscript now; a polished public app
-    deployment can be reintroduced once authentication and hosting are sorted.
+    Visitors can explore the app, inspect the repository, and read the
+    manuscript directly.
   tooling: "Python, epitope prediction workflows, genomic annotation, reproducible analysis"
   highlights:
+    - "Interactive Streamlit app is live"
     - "Public repository available through MalariaGEN"
     - "Preprint links software with peptide-vaccine prioritisation"
     - "Built around reproducible filtering rather than a one-off notebook analysis"
@@ -54,9 +55,8 @@
     Public code and preprint are available and represent the main public entry
     point for the framework.
   public_access: >
-    This is the strongest currently public software-methods example on the
-    site, with both manuscript and reproducible repository available.
-  tooling: "Python, statistical modelling, dimensionality reduction, genotype-phenotype analysis"
+    Public readers can inspect both the manuscript and reproducible repository.
+  tooling: "R, Python, statistical modelling, dimensionality reduction, genotype-phenotype analysis"
   highlights:
     - "Public code repository mirrors the paper workflow"
     - "Method-focused project with strong quantitative framing"
@@ -153,11 +153,11 @@
     scale to understand the global rise of artemisinin resistance and support
     surveillance interpretation.
   current_status: >
-    Public paper available; the main analytical workflow itself is not exposed
-    as a standalone public repository on this site.
+    Open-access paper available, with ongoing follow-up GWAS and resistance
+    surveillance analyses extending the work.
   public_access: >
     The paper and associated open-access figures provide the main public-facing
-    route into the work at present.
+    route into the work, alongside related project briefs on this site.
   tooling: "Large-scale genomics, evidence synthesis, resistance surveillance"
   highlights:
     - "Paper covers more than 100,000 parasite samples"
@@ -170,6 +170,104 @@
     - genomic surveillance
     - malaria
     - evidence synthesis
+
+- name: "Therapeutic Efficacy Study GWAS"
+  slug: "therapeutic-efficacy-study-gwas"
+  description: >
+    Mixed-model genome-wide association analyses linking antimalarial response
+    phenotypes to parasite variants in therapeutic efficacy datasets.
+  url: ""
+  github: ""
+  paper_url: ""
+  paper_doi: ""
+  repo_visibility: "private"
+  overview: >
+    Current malaria genomics work combining linear mixed models, permutation
+    thresholds, and phenotype-specific quality control to test for associations
+    between parasite variation and TES-derived treatment-response phenotypes.
+  current_status: >
+    Active private analysis workspace spanning lumefantrine and related TES
+    phenotypes, with follow-up interpretation of the strongest recurrent loci.
+  public_access: >
+    The working repository is private while analyses and downstream outputs are
+    still being developed.
+  tooling: "Python, GWAS, linear mixed models, permutation testing, Plasmodium falciparum genomics"
+  highlights:
+    - "Genome-wide scans across multiple TES phenotype definitions"
+    - "Mixed-model association testing with relatedness correction"
+    - "Current follow-up work focuses on robustness and biological interpretation"
+  year: 2026
+  status: active
+  featured: false
+  tags:
+    - malaria
+    - GWAS
+    - genomic surveillance
+
+- name: "Bryant Group Respiratory Microbiome Analyses"
+  slug: "bryant-group-respiratory-microbiome-analyses"
+  description: >
+    Genomics and statistical analysis across COPD and respiratory microbiome
+    datasets in Josie Bryant's group at the Wellcome Sanger Institute.
+  url: ""
+  github: ""
+  paper_url: ""
+  paper_doi: ""
+  repo_visibility: "private"
+  overview: >
+    Current collaborative analyses in the Bryant Group spanning respiratory
+    microbiome structure, airway-associated pathogen dynamics, and
+    cross-project quantitative readouts from lung infection datasets.
+  current_status: >
+    Ongoing private analysis work in Josie Bryant's group across COPD and
+    respiratory microbiome datasets.
+  public_access: >
+    Repositories are currently private, but this work is part of Andrew
+    Balmer's current role in the Bryant Group at Sanger.
+  tooling: "Python, R, notebooks, microbial genomics, statistical modelling"
+  highlights:
+    - "Current work in Josie Bryant's group at the Wellcome Sanger Institute"
+    - "Brings pathogen genomics methods into respiratory microbiome datasets"
+    - "Includes COPD and airway-focused analysis streams"
+  year: 2026
+  status: active
+  featured: false
+  tags:
+    - respiratory microbiome
+    - COPD
+    - pathogen genomics
+
+- name: "Smartcare CF Pseudomonas"
+  slug: "smartcare-cf-pseudomonas"
+  description: >
+    Analysis of clinical, microbiological, and longitudinal signals in cystic
+    fibrosis Pseudomonas datasets.
+  url: ""
+  github: ""
+  paper_url: ""
+  paper_doi: ""
+  repo_visibility: "private"
+  overview: >
+    Bryant-group analysis project focused on integrating clinical measurements
+    and airway microbiology in cystic fibrosis-associated Pseudomonas datasets.
+  current_status: >
+    Active private analysis repository supporting exploratory modelling and
+    figure development.
+  public_access: >
+    The working repository is private while analyses and manuscript framing
+    continue to develop.
+  tooling: "Python, Jupyter, longitudinal analysis, microbial genomics"
+  highlights:
+    - "Integrates clinical and microbiology measurements"
+    - "Focused on airway infection dynamics in cystic fibrosis"
+    - "Part of current Bryant-group respiratory infection work"
+  year: 2026
+  status: active
+  featured: false
+  tags:
+    - cystic fibrosis
+    - pseudomonas
+    - respiratory microbiome
 
 - name: "AMR Cartography in Streptococcus suis"
   slug: "amr-cartography-in-streptococcus-suis"

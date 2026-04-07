@@ -11,20 +11,21 @@ updated: "April 2026"
 
 ## Currently working on
 
-- Finalising follow-up analyses and manuscripts on antimicrobial resistance cartography and multivariate resistance dynamics.
-- Continuing pathogen genomics work focused on antimalarial resistance surveillance and interpretation at global scale.
-- Developing and refining reproducible analysis workflows for vaccine-target and genomic surveillance projects.
+- Working in [Josie Bryant's group](https://www.sanger.ac.uk/group/bryant-group/) at the [Wellcome Sanger Institute](https://www.sanger.ac.uk/) on respiratory microbiome and airway-pathogen projects, including COPD and cystic-fibrosis-associated analyses.
+- Running therapeutic-efficacy-study GWAS analyses in *Plasmodium falciparum*, using mixed models, permutation thresholds, and follow-up interpretation of recurrent loci.
+- Finalising follow-up methods and manuscripts on antimicrobial resistance cartography, artemisinin resistance surveillance, and Pf-PeptideFilter.
 
 ## Recent
 
 - Led a large-scale analysis of more than 100,000 *Plasmodium falciparum* samples to investigate the global rise of artemisinin resistance.
-- Co-led development of Pf-PeptideFilter (formerly PepExplorer), a peptide vaccine discovery platform integrating genomic and immunological evidence.
-- Delivered invited talks for public health and genomics audiences, including CDC, UKHSA, and Wellcome Sanger Institute groups.
+- Co-led development of [Pf-PeptideFilter](https://pf-peptidefilter.streamlit.app/) (formerly PepExplorer), a peptide vaccine discovery platform integrating genomic and immunological evidence.
+- Continued building out current work in the Bryant Group while extending malaria-genomics and AMR-methods projects from earlier Cambridge and Sanger collaborations.
+- Delivered invited talks for public-health and genomics audiences, including CDC, UKHSA, and MalariaGEN.
 
 ## Reading
 
 - Recent work on genomic epidemiology and resistance evolution.
-- Methods papers on robust uncertainty quantification and model validation in public health data science.
+- Methods papers on robust uncertainty quantification, mixed-model association testing, and model validation in public health data science.
 
 ## Outside research
 

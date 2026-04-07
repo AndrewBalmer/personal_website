@@ -65,10 +65,40 @@
   }
 }
 
+.cv-skill-entry {
+  display: grid;
+  grid-template-columns: minmax(12rem, 15rem) 1fr;
+  gap: $sp-2 $sp-6;
+  margin-bottom: $sp-4;
+  align-items: start;
+
+  &__label {
+    color: $c-muted;
+    font-size: $fz-sm;
+    font-weight: 600;
+    line-height: $lh-tight;
+  }
+
+  &__body {
+    min-width: 0;
+
+    p {
+      font-size: $fz-sm;
+      color: $c-muted;
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (max-width: 36em) {
   .cv-entry {
     grid-template-columns: 1fr;
     gap: $sp-1;
     &__year { font-size: $fz-xs; }
+  }
+
+  .cv-skill-entry {
+    grid-template-columns: 1fr;
+    gap: $sp-1;
   }
 }
