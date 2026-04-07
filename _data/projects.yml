@@ -16,17 +16,15 @@
     evidence so candidate lists can be filtered in a more biologically
     informed way.
   current_status: >
-    Public code, preprint, and interactive Streamlit app are all available as
-    active public outputs.
+    Public repository, preprint, and Streamlit app are available.
   public_access: >
-    Visitors can explore the app, inspect the repository, and read the
-    manuscript directly.
+    The app, repository, and manuscript can all be accessed publicly.
   tooling: "Python, epitope prediction workflows, genomic annotation, reproducible analysis"
   highlights:
     - "Interactive Streamlit app is live"
     - "Public repository available through MalariaGEN"
-    - "Preprint links software with peptide-vaccine prioritisation"
-    - "Built around reproducible filtering rather than a one-off notebook analysis"
+    - "Preprint documents the filtering workflow"
+    - "Project combines peptide prediction with genomic evidence"
   year: 2025
   status: active
   featured: true
@@ -52,15 +50,14 @@
     treating each drug independently. The project combines statistical
     modelling, visualisation, and reproducible code for method development.
   current_status: >
-    Public code and preprint are available and represent the main public entry
-    point for the framework.
+    Public repository and preprint are available.
   public_access: >
-    Public readers can inspect both the manuscript and reproducible repository.
+    The manuscript and reproducible repository are both public.
   tooling: "R, Python, statistical modelling, dimensionality reduction, genotype-phenotype analysis"
   highlights:
     - "Public code repository mirrors the paper workflow"
-    - "Method-focused project with strong quantitative framing"
-    - "Forms the basis for follow-on software and manuscript work"
+    - "Method-focused project for multivariate resistance analysis"
+    - "Includes reproducible code for the paper workflow"
   year: 2025
   status: active
   featured: true
@@ -156,13 +153,13 @@
     Open-access paper available, with ongoing follow-up GWAS and resistance
     surveillance analyses extending the work.
   public_access: >
-    The paper and associated open-access figures provide the main public-facing
-    route into the work, alongside related project briefs on this site.
+    The paper and associated figures are the main public materials for this
+    work.
   tooling: "Large-scale genomics, evidence synthesis, resistance surveillance"
   highlights:
     - "Paper covers more than 100,000 parasite samples"
-    - "Strong example of translational genomics for surveillance"
-    - "Core outputs are public through the eLife article"
+    - "Maps resistance markers across global parasite populations"
+    - "Core outputs are available through the eLife article"
   year: 2025
   status: active
   featured: false
@@ -187,7 +184,7 @@
     between parasite variation and TES-derived treatment-response phenotypes.
   current_status: >
     Active private analysis workspace spanning lumefantrine and related TES
-    phenotypes, with follow-up interpretation of the strongest recurrent loci.
+    phenotypes, with follow-up interpretation of recurrent loci.
   public_access: >
     The working repository is private while analyses and downstream outputs are
     still being developed.

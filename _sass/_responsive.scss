@@ -3,7 +3,12 @@
   h1 { font-size: $fz-3xl; }
   h2 { font-size: $fz-xl; }
 
-  .container { padding: 0 $sp-4; }
+  .container,
+  .site-header__inner {
+    width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    padding: 0 $sp-4;
+  }
   .project-grid { grid-template-columns: 1fr; }
 
   .site-nav { gap: 0; }
@@ -18,9 +23,4 @@
   .pub-title { font-size: $fz-base; }
 
   .page-title { font-size: $fz-2xl; }
-}
-
-// ─── Wide screens (> 1280px) ──────────────────────────────────
-@media (min-width: 80em) {
-  .container { max-width: 74rem; }
 }

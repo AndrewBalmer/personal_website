@@ -7,7 +7,7 @@ description: "Software, tools, and pipelines I have developed or contributed to.
 {% assign active   = site.data.projects | where: "status", "active"   | sort: "year" | reverse %}
 {% assign archived = site.data.projects | where: "status", "archived" | sort: "year" | reverse %}
 
-<p style="font-size: 0.95rem; color: #64748b; max-width: 48rem;">
+<p style="font-size: 0.95rem; color: #64748b;">
   GitHub buttons are shown only for repositories that are publicly reachable without a login.
   Some ongoing analysis repositories remain private or internal, so those cards are listed without public repo links.
   Public repositories are also available on

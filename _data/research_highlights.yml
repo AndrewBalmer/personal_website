@@ -1,9 +1,9 @@
 - category: "Genomic surveillance"
   title: "Tracking artemisinin resistance across more than 100,000 samples"
   summary: >
-    Large-scale malaria surveillance project synthesising parasite genetics,
-    geography, and resistance dynamics to clarify how artemisinin resistance is
-    changing across global populations.
+    Study of global artemisinin resistance using more than 100,000
+    Plasmodium falciparum samples to map resistance markers, population
+    structure, and changes through time.
   image: "/assets/images/research/artemisinin-resistance-map.jpg"
   alt: "Global resistance map figure from the eLife paper on artemisinin resistance."
   paper_url: "https://elifesciences.org/articles/105544"
@@ -18,9 +18,9 @@
 - category: "Quantitative methods"
   title: "AMR cartography for multivariate resistance phenotypes"
   summary: >
-    First-author methods project building a general framework for analysing
-    multivariate drug-resistance phenotypes instead of treating each drug as an
-    isolated outcome.
+    Methods project developing a framework for analysing multivariate
+    drug-resistance phenotypes using MIC correlations, ordination, and
+    genotype-phenotype mapping.
   image: "/assets/images/research/amr-cartography-figure-1.png"
   alt: "Figure 1 from the AMR Cartography manuscript."
   paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
@@ -36,9 +36,8 @@
 - category: "Resistance trajectories"
   title: "Logistic trajectories for rising kelch13 resistance"
   summary: >
-    Follow-up analysis from the global artemisinin-resistance study, focused on
-    how validated and candidate kelch13 markers have risen across Southeast
-    Asia and parts of East and Northeast Africa.
+    Analysis from the artemisinin-resistance study examining how validated and
+    candidate kelch13 markers have changed across endemic regions.
   image: "/assets/images/research/artemisinin-figure-8.jpg"
   alt: "Figure 8 from the eLife paper on artemisinin resistance."
   paper_url: "https://elifesciences.org/articles/105544"
@@ -53,9 +52,9 @@
 - category: "Vaccine target discovery"
   title: "Pf-PeptideFilter turns peptide prioritisation into an interactive workflow"
   summary: >
-    Software-and-analysis project for prioritising malaria peptide vaccine
-    candidates by combining epitope prediction, filtering diagnostics, and
-    population-scale genomic evidence in one public workflow.
+    Malaria vaccine-target prioritisation project combining epitope prediction,
+    filtering diagnostics, and population-scale genomic evidence in a public
+    software workflow.
   image: "/assets/images/research/pf-peptidefilter-figure-2.png"
   alt: "Figure 2 from the Pf-PeptideFilter bioRxiv preprint."
   paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
@@ -71,9 +70,9 @@
 - category: "Zoonotic emergence"
   title: "Genome reduction tracks pathogenicity in pig-associated S. suis"
   summary: >
-    Comparative genomics project on the emergence and diversification of
-    zoonotic Streptococcus suis lineages within intensively farmed pigs, with a
-    focus on pathogenicity, lineage structure, and long-term evolution.
+    Comparative genomics study of zoonotic Streptococcus suis lineages in
+    intensively farmed pigs, focusing on pathogenicity, lineage structure, and
+    long-term evolution.
   image: "/assets/images/research/pigs-pnas-figure-5.png"
   alt: "Figure 5 from the PNAS paper on zoonotic pathogen emergence in intensively farmed pigs."
   paper_url: "https://www.repository.cam.ac.uk/handle/1810/361461"
@@ -88,8 +87,8 @@
 - category: "Evolutionary dynamics"
   title: "Mutation-rate shifts mirror ecological change"
   summary: >
-    Earlier Streptococcus suis project linking mutation-rate dynamics,
-    ecological change, and long-term pathogen evolution across divergent
+    Evolutionary genomics study linking mutation-rate dynamics, ecological
+    change, and long-term pathogen evolution across Streptococcus suis
     lineages.
   image: "/assets/images/research/mutation-rate-dynamics-figure-1.png"
   alt: "Figure 1 from the PLOS Genetics paper on mutation rate dynamics in an emerging zoonotic pathogen."
@@ -105,7 +104,7 @@
 - category: "AMR in S. suis"
   title: "Resistant PBP types align with elevated beta-lactam MICs"
   summary: >
-    Recent collaborative paper on emerging zoonotic and multidrug-resistant
+    Collaborative study of emerging zoonotic and multidrug-resistant
     Streptococcus suis lineages, linking capsule switching, AMR acquisition,
     and beta-lactam phenotype shifts.
   image: "/assets/images/research/ssuis-lineages-figure-5.png"

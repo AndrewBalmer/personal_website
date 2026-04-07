@@ -6,7 +6,7 @@ description: "Short bio, profile information, and contact details."
 
 {% assign profile = site.data.profile %}
 
-<p style="font-size: 1rem; color: #475569; max-width: 46rem;">
+<p style="font-size: 1rem; color: #475569;">
   Short bio, current affiliations, and direct contact details.
 </p>
 

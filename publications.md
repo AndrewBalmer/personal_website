@@ -7,7 +7,7 @@ description: "Peer-reviewed publications and preprints from my work in computati
 {% assign pubs = site.data.publications %}
 {% assign pubs_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
 
-<p style="font-size: 1rem; color: #475569; max-width: 46rem;">
+<p style="font-size: 1rem; color: #475569;">
   Publications and preprints across pathogen genomics, antimicrobial
   resistance, and quantitative biology. Entries below include short summaries,
   project context, and direct links to paper, DOI, PDF, code, and data where

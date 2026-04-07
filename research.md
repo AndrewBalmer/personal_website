@@ -6,7 +6,7 @@ description: "Figure-led gallery of my recent research across genomics, resistan
 
 {% assign highlights = site.data.research_highlights %}
 
-<p style="font-size: 1rem; color: #475569; max-width: 46rem;">
+<p style="font-size: 1rem; color: #475569;">
   A figure-led gallery of recent work across pathogen genomics, malaria
   surveillance, and antimicrobial resistance modelling. Each snapshot links to
   the paper and, where possible, a public project brief or code repository.
@@ -17,7 +17,17 @@ description: "Figure-led gallery of my recent research across genomics, resistan
   {% for item in highlights %}
   <article class="snapshot-card">
     <div class="snapshot-card__media{% if item.media_style == 'banner' %} snapshot-card__media--banner{% endif %}">
+      {% if item.paper_url %}
+      <a href="{{ item.paper_url }}" class="snapshot-card__media-link" target="_blank" rel="noopener">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" loading="lazy">
+      </a>
+      {% elsif item.project_url %}
+      <a href="{{ item.project_url | relative_url }}" class="snapshot-card__media-link">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" loading="lazy">
+      </a>
+      {% else %}
       <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" loading="lazy">
+      {% endif %}
     </div>
     <div class="snapshot-card__body">
       <div class="snapshot-card__topline">
@@ -29,7 +39,15 @@ description: "Figure-led gallery of my recent research across genomics, resistan
         </div>
         {% endif %}
       </div>
-      <h2 class="snapshot-card__title">{{ item.title }}</h2>
+      <h2 class="snapshot-card__title">
+        {% if item.paper_url %}
+        <a href="{{ item.paper_url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+        {% elsif item.project_url %}
+        <a href="{{ item.project_url | relative_url }}">{{ item.title }}</a>
+        {% else %}
+        {{ item.title }}
+        {% endif %}
+      </h2>
       <p class="snapshot-card__summary">{{ item.summary }}</p>
       <div class="snapshot-card__links">
         {% if item.paper_url %}

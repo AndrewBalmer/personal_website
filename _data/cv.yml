@@ -16,10 +16,15 @@ education:
     note: "Graduated top 5 in cohort; study abroad at University of Heidelberg (evolution and genetics)."
 
 positions:
+  - title: "Senior Bioinformatician"
+    institution: "Wellcome Sanger Institute, Bryant Group"
+    location: "Hinxton, Cambridge, UK"
+    year: "2026-present"
+    note: "Working on respiratory microbiome, airway-pathogen, and related statistical genomics analyses in Josie Bryant's group."
   - title: "Senior Genomic Surveillance Data Scientist"
     institution: "Wellcome Sanger Institute"
     location: "Hinxton, Cambridge, UK"
-    year: "2023-present"
+    year: "2023-2026"
     note: "Led large-scale malaria genomics analyses and co-led Pf-PeptideFilter (formerly PepExplorer) vaccine discovery platform development."
   - title: "Research Internship"
     institution: "UK Health Security Agency (UKHSA)"

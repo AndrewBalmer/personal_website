@@ -88,7 +88,8 @@ blockquote {
 
 // ─── Layout helpers ───────────────────────────────────────────
 .container {
-  max-width: $max-w;
+  width: min(65vw, 96rem);
+  max-width: calc(100% - 2rem);
   margin: 0 auto;
   padding: 0 $sp-6;
 }
