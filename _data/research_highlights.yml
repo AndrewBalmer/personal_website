@@ -18,17 +18,16 @@
 - category: "Quantitative methods"
   title: "AMR cartography for multivariate resistance phenotypes"
   summary: >
-    A methods-focused snapshot from recent work on modelling complex resistance
-    landscapes, designed to bridge exploratory visualisation, uncertainty, and
-    genotype-phenotype mapping.
-  image: "/assets/images/research/amr-cartography-graphic-1.gif"
-  alt: "Figure thumbnail banner from the AMR Cartography bioRxiv preprint."
+    Figure 1 from the AMR Cartography manuscript, showing the phenotype map in
+    the context of the underlying MIC correlations and calibrated biplot view.
+  image: "/assets/images/research/amr-cartography-figure-1.png"
+  alt: "Figure 1 from the AMR Cartography manuscript."
   paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
-  paper_label: "bioRxiv 2025"
+  paper_label: "Figure 1"
   project_url: "/projects/#antimicrobial-resistance-cartography"
   project_label: "Project brief"
   code_url: "https://github.com/AndrewBalmer/AMR-cartography"
-  source_note: "Article thumbnail from Antimicrobial Resistance Cartography"
+  source_note: "Figure 1 from Antimicrobial Resistance Cartography"
   metric_value: "Framework"
   metric_label: "for multivariate AMR"
   media_style: "banner"
