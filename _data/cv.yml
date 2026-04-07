@@ -79,7 +79,7 @@ service:
 
 skills:
   - category: "Programming and data science"
-    items: "R, Python, shell scripting, Git/GitHub, Jupyter"
+    items: "R, Python, shell scripting, Git/GitHub, Jupyter, AI agentic workflows"
   - category: "Statistics and modelling"
     items: "Multivariate analysis, model fitting, machine learning, uncertainty quantification, sensitivity analysis"
   - category: "Genomics and bioinformatics"
