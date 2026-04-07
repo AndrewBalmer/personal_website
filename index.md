@@ -3,7 +3,7 @@ layout: home
 title: Home
 avatar: /ab69.jpg
 hero_title: Andrew Balmer
-hero_sub: Computational Biologist, Genomic Data Scientist, and Quantitative Researcher
+hero_sub: Computational Biologist, Senior Bioinformatician, and Quantitative Researcher
 description: "I work on pathogen genomics, antimicrobial resistance, and scientific software at the Wellcome Sanger Institute."
 ---
 

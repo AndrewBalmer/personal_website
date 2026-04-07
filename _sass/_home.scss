@@ -5,6 +5,11 @@
   border-bottom: 1px solid $c-border;
 }
 
+.hero .container,
+.home-section .container {
+  max-width: 90rem;
+}
+
 .hero__inner {
   display: flex;
   align-items: flex-start;
@@ -46,7 +51,7 @@
   line-height: $lh-loose;
   color: $c-text;
   margin-bottom: $sp-6;
-  max-width: 40rem;
+  max-width: 56rem;
   p:last-child { margin-bottom: 0; }
 }
 
@@ -61,7 +66,7 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: $sp-3;
-  max-width: 46rem;
+  max-width: 62rem;
 }
 
 .hero-proof {
@@ -159,7 +164,7 @@
   }
 
   &__deck {
-    max-width: 42rem;
+    max-width: 58rem;
     color: $c-muted;
     font-size: $fz-base;
     line-height: $lh-loose;
@@ -193,7 +198,7 @@
 
   &--lead {
     grid-column: 1 / -1;
-    grid-template-columns: minmax(0, 1.3fr) minmax(18rem, 0.9fr);
+    grid-template-columns: minmax(0, 1.45fr) minmax(24rem, 0.95fr);
   }
 
   &__media {
@@ -208,6 +213,12 @@
       object-fit: cover;
       object-position: center;
     }
+  }
+
+  &__media-link {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   &__media--banner {
@@ -271,6 +282,15 @@
     margin: 0;
     font-size: 1.4rem;
     line-height: 1.2;
+
+    a {
+      color: $c-text;
+      text-decoration: none;
+
+      &:hover {
+        color: $c-accent;
+      }
+    }
   }
 
   &__summary {
@@ -384,7 +404,7 @@
 
 .contact-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.8fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(20rem, 0.85fr);
   gap: $sp-6;
   padding: $sp-6;
   border-radius: 1.25rem;
