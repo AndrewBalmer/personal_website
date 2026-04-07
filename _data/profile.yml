@@ -1,7 +1,7 @@
 headline: "Computational biologist working at the intersection of pathogen genomics, quantitative modelling, and scientific software."
 
 current_role:
-  title: "Senior Genomic Surveillance Data Scientist"
+  title: "Senior Bioinformatician"
   institution: "Wellcome Sanger Institute"
   institution_url: "https://www.sanger.ac.uk/"
   group: "Bryant Group"
@@ -60,7 +60,7 @@ proof_points:
     label: "CDC, UKHSA, Sanger"
 
 bio: >
-  Andrew Balmer is a computational biologist and genomic data scientist at the
+  Andrew Balmer is a computational biologist and senior bioinformatician at the
   Wellcome Sanger Institute, where he is currently working in Josie Bryant's
   group. His research combines pathogen genomics, antimicrobial resistance
   modelling, genome-wide association analysis, and reproducible scientific
