@@ -1,5 +1,8 @@
 {% assign pub = include.pub %}
-<article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+{% assign card_id = pub.slug | default: pub.title | slugify %}
+<article id="{{ card_id }}"
+         class="pub-card{% if include.detailed %} pub-card--detailed{% endif %}"
+         itemscope itemtype="https://schema.org/ScholarlyArticle">
 
   <p class="pub-authors">
     {{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}
@@ -63,7 +66,37 @@
        target="_blank"
        rel="noopener">Code</a>
     {% endif %}
+
+    {% if pub.data_url != "" %}
+    <a href="{{ pub.data_url }}"
+       class="pub-badge pub-badge--data"
+       target="_blank"
+       rel="noopener">Data</a>
+    {% endif %}
+
+    {% if pub.project_url != "" %}
+    <a href="{{ pub.project_url | relative_url }}"
+       class="pub-badge pub-badge--muted">Project</a>
+    {% endif %}
   </div>
+
+  {% if include.detailed %}
+    {% if pub.summary != "" or pub.contribution != "" or pub.coauthor_context != "" %}
+    <div class="pub-detail">
+      {% if pub.summary != "" %}
+      <p class="pub-detail__summary">{{ pub.summary }}</p>
+      {% endif %}
+
+      {% if pub.contribution != "" %}
+      <p class="pub-detail__meta"><strong>Contribution:</strong> {{ pub.contribution }}</p>
+      {% endif %}
+
+      {% if pub.coauthor_context != "" %}
+      <p class="pub-detail__meta"><strong>Context:</strong> {{ pub.coauthor_context }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  {% endif %}
 
   {% if pub.tags.size > 0 %}
   <div class="pub-tags" aria-label="Tags">

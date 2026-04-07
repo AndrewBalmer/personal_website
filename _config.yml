@@ -2,20 +2,28 @@
 title: "Andrew Balmer"
 tagline: "Computational Biologist & Data Scientist"
 description: >
-  Personal website of Andrew Balmer - research, publications,
-  projects, and CV.
+  Research website of Andrew Balmer - computational biology, pathogen genomics,
+  antimicrobial resistance modelling, publications, software, talks, and CV.
 url: "https://andrewbalmer.github.io"
 baseurl: "/personal_website"
+custom_domain: ""
+social_image: "/assets/images/social-card.png"
+theme_color: "#0f172a"
 
 author:
   name: "Andrew Jonathan Balmer"
-  email: "Andrew.balmer@hotmail.co.uk"
+  email: "ab69@sanger.ac.uk"
+  personal_email: "Andrew.balmer@hotmail.co.uk"
   github: "AndrewBalmer"
   twitter: ""
   linkedin: "andrew-balmer-7657b35b"
   orcid: "0000-0001-7446-3428"
   google_scholar: "fff8gqUAAAAJ"
   avatar: "/ab69.jpg"
+  works_for: "Wellcome Sanger Institute"
+  alumni_of: "University of Cambridge"
+  location: "Cambridge, UK"
+  website: "https://andrewbalmer.github.io/personal_website/"
 
 markdown: kramdown
 highlighter: rouge
@@ -37,6 +45,7 @@ twitter:
   card: summary
 
 logo: "/ab69.jpg"
+image: "/assets/images/social-card.png"
 
 analytics:
   plausible_domain: ""

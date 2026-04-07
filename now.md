@@ -2,7 +2,7 @@
 layout: page
 title: Now
 description: "What Andrew Balmer is currently working on."
-updated: "March 2026"
+updated: "April 2026"
 ---
 
 *Last updated: {{ page.updated }}. Inspired by [nownownow.com](https://nownownow.com/about).*

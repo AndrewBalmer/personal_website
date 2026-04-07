@@ -1,4 +1,5 @@
 - name: "Pf-PeptideFilter"
+  slug: "pf-peptidefilter"
   description: >
     Peptide vaccine discovery platform for Plasmodium falciparum, formerly
     PepExplorer, combining large-scale MHC binding prediction with
@@ -8,6 +9,23 @@
   paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
   paper_doi: "10.64898/2025.12.15.694343"
   repo_visibility: "public"
+  overview: >
+    Pf-PeptideFilter is a scientific software and analysis project for
+    prioritising malaria peptide vaccine candidates. It brings together
+    epitope-prediction outputs, genomic annotations, and population-scale
+    evidence so candidate lists can be filtered in a more biologically
+    informed way.
+  current_status: >
+    Public code and preprint are available. The interactive app itself is not
+    currently exposed as a fully public production service.
+  public_access: >
+    Visitors can inspect the codebase and manuscript now; a polished public app
+    deployment can be reintroduced once authentication and hosting are sorted.
+  tooling: "Python, epitope prediction workflows, genomic annotation, reproducible analysis"
+  highlights:
+    - "Public repository available through MalariaGEN"
+    - "Preprint links software with peptide-vaccine prioritisation"
+    - "Built around reproducible filtering rather than a one-off notebook analysis"
   year: 2025
   status: active
   featured: true
@@ -17,6 +35,7 @@
     - python
 
 - name: "Antimicrobial Resistance Cartography"
+  slug: "antimicrobial-resistance-cartography"
   description: >
     A computational framework for analysing multivariate antimicrobial
     resistance phenotypes at population scale, with uncertainty-aware
@@ -26,6 +45,22 @@
   paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
   paper_doi: "10.1101/2025.09.12.675231"
   repo_visibility: "public"
+  overview: >
+    AMR Cartography is a first-author methods project focused on modelling
+    complex resistance phenotypes as multivariate structures rather than
+    treating each drug independently. The project combines statistical
+    modelling, visualisation, and reproducible code for method development.
+  current_status: >
+    Public code and preprint are available and represent the main public entry
+    point for the framework.
+  public_access: >
+    This is the strongest currently public software-methods example on the
+    site, with both manuscript and reproducible repository available.
+  tooling: "Python, statistical modelling, dimensionality reduction, genotype-phenotype analysis"
+  highlights:
+    - "Public code repository mirrors the paper workflow"
+    - "Method-focused project with strong quantitative framing"
+    - "Forms the basis for follow-on software and manuscript work"
   year: 2025
   status: active
   featured: true
@@ -35,6 +70,7 @@
     - computational biology
 
 - name: "Kelch13 Biophysical Features"
+  slug: "kelch13-biophysical-features"
   description: >
     Exploratory and reproducible analysis of amino-acid substitutions in
     Kelch13, linking biophysical features to artemisinin resistance in
@@ -44,6 +80,22 @@
   paper_url: ""
   paper_doi: ""
   repo_visibility: "private"
+  overview: >
+    This project explores amino-acid substitutions in Kelch13 to understand
+    how mutational accessibility, chemistry, and protein context relate to
+    artemisinin resistance in Plasmodium falciparum.
+  current_status: >
+    The working analysis repository is private, but the scientific question
+    feeds directly into the broader resistance-surveillance work highlighted on
+    the site.
+  public_access: >
+    A public repo is not currently available. The most relevant public context
+    is the artemisinin-resistance paper and related malaria genomics work.
+  tooling: "R, exploratory analysis, structural and biophysical interpretation"
+  highlights:
+    - "Focused exploratory project around resistance-associated substitutions"
+    - "Bridges molecular interpretation with population-scale surveillance"
+    - "Public-facing context currently comes through linked malaria papers"
   year: 2025
   status: active
   featured: true
@@ -53,14 +105,30 @@
     - statistical analysis
 
 - name: "AMR Cartography R Package"
+  slug: "amr-cartography-r-package"
   description: >
     Early-stage R package scaffold that turns the AMR Cartography workflow into
     a more reproducible, installable, and reusable analysis toolkit.
   url: ""
-  github: ""
+  github: "https://github.com/AndrewBalmer/AMRC-R-package"
   paper_url: ""
   paper_doi: ""
-  repo_visibility: "private"
+  repo_visibility: "public"
+  overview: >
+    This package-oriented follow-on project is intended to turn the AMR
+    Cartography workflow into a more reusable R package with clearer APIs,
+    installation, and reproducibility.
+  current_status: >
+    Public repository available and under active development while the package
+    design and migration path are being refined.
+  public_access: >
+    Public readers can inspect the package repository directly, alongside the
+    AMR Cartography paper and public workflow repository it builds on.
+  tooling: "R package development, workflow refactoring, reproducibility"
+  highlights:
+    - "Extends the public AMR Cartography methods work"
+    - "Focused on packaging and reuse rather than a new biological question"
+    - "Public while APIs and migration plan continue to evolve"
   year: 2025
   status: active
   featured: false
@@ -70,6 +138,7 @@
     - reproducibility
 
 - name: "Global Artemisinin Resistance Meta-analysis"
+  slug: "global-artemisinin-resistance-meta-analysis"
   description: >
     Large-scale quantitative analysis of more than 100,000 Plasmodium
     falciparum samples to map resistance spread and support genomic
@@ -79,6 +148,21 @@
   paper_url: "https://elifesciences.org/articles/105544"
   paper_doi: "10.7554/eLife.105544"
   repo_visibility: ""
+  overview: >
+    Research programme focused on synthesising parasite genomic evidence at
+    scale to understand the global rise of artemisinin resistance and support
+    surveillance interpretation.
+  current_status: >
+    Public paper available; the main analytical workflow itself is not exposed
+    as a standalone public repository on this site.
+  public_access: >
+    The paper and associated open-access figures provide the main public-facing
+    route into the work at present.
+  tooling: "Large-scale genomics, evidence synthesis, resistance surveillance"
+  highlights:
+    - "Paper covers more than 100,000 parasite samples"
+    - "Strong example of translational genomics for surveillance"
+    - "Core outputs are public through the eLife article"
   year: 2025
   status: active
   featured: false
@@ -88,6 +172,7 @@
     - evidence synthesis
 
 - name: "AMR Cartography in Streptococcus suis"
+  slug: "amr-cartography-in-streptococcus-suis"
   description: >
     Manuscript and analysis workspace adapting the AMR Cartography framework to
     Streptococcus suis beta-lactam resistance.
@@ -96,6 +181,21 @@
   paper_url: ""
   paper_doi: ""
   repo_visibility: "private"
+  overview: >
+    Adaptation of the AMR Cartography framework to Streptococcus suis,
+    extending the general method into a new pathogen and beta-lactam
+    resistance context.
+  current_status: >
+    Working manuscript and analysis repository remain private while the project
+    matures.
+  public_access: >
+    Public readers can still understand the surrounding scientific area through
+    the Streptococcus suis preprint and the main AMR Cartography paper.
+  tooling: "Statistical modelling, resistance phenotypes, pathogen evolution"
+  highlights:
+    - "Method transfer from pneumococcal AMR work into S. suis"
+    - "Bridges manuscript development with analytical method adaptation"
+    - "Best current public context is via related papers rather than code"
   year: 2025
   status: archived
   featured: false
@@ -105,6 +205,7 @@
     - manuscript
 
 - name: "S. suis Growth Rate Variability"
+  slug: "s-suis-growth-rate-variability"
   description: >
     Repository for exploratory analyses of growth-rate variability and related
     evolutionary questions in Streptococcus suis.
@@ -113,6 +214,21 @@
   paper_url: ""
   paper_doi: ""
   repo_visibility: "private"
+  overview: >
+    Exploratory project on growth-rate variability and related evolutionary
+    questions in Streptococcus suis, linked to earlier work on mutation rates,
+    pathogen emergence, and ecological change.
+  current_status: >
+    Historical analysis repository retained as background for related
+    publications rather than as a polished public software release.
+  public_access: >
+    Public-facing context is currently best represented by the linked PNAS and
+    PLOS Genetics publications rather than the private repository itself.
+  tooling: "Evolutionary analysis, statistical modelling, pathogen dynamics"
+  highlights:
+    - "Supports interpretation of earlier zoonotic-pathogen publications"
+    - "Useful as scientific background even without a public repo"
+    - "Better framed as a project brief than as a standalone software package"
   year: 2024
   status: archived
   featured: false

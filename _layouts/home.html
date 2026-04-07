@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% assign profile = site.data.profile %}
+{% assign highlights = site.data.research_highlights %}
+{% assign featured_pubs = site.data.publications | where: "featured", true %}
+{% assign active_projects = site.data.projects | where: "status", "active" | sort: "year" | reverse %}
+{% assign invited_talks = site.data.talks | where: "invited", true | sort: "year" | reverse %}
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->
 <section class="hero" aria-label="Introduction">
@@ -19,19 +24,34 @@ layout: default
       <div class="hero__text">
         <h1 class="hero__title">{{ page.hero_title | default: site.author.name }}</h1>
         <p class="hero__sub">{{ page.hero_sub | default: site.tagline }}</p>
+        <p class="hero__role">
+          {{ profile.current_role.title }} at
+          <a href="{{ profile.current_role.institution_url }}" target="_blank" rel="noopener">{{ profile.current_role.institution }}</a>
+          · {{ profile.contact.location }}
+        </p>
         <div class="hero__bio">{{ content }}</div>
         <div class="hero__ctas">
           <a href="{{ '/publications/' | relative_url }}" class="btn btn--primary">Publications</a>
-          <a href="{{ '/assets/cv/andrew_balmer_cv.docx' | relative_url }}"
+          <a href="{{ '/assets/cv/andrew_balmer_cv.pdf' | relative_url }}"
              class="btn btn--outline"
              target="_blank"
-             rel="noopener">Download CV</a>
+             rel="noopener">CV (PDF)</a>
+          <a href="{{ '/about/' | relative_url }}" class="btn btn--outline">About</a>
           {% if site.author.github and site.author.github != "" %}
           <a href="https://github.com/{{ site.author.github }}"
              class="btn btn--outline"
              target="_blank"
              rel="noopener me">GitHub</a>
           {% endif %}
+        </div>
+
+        <div class="hero__proof-grid" aria-label="Professional highlights">
+          {% for item in profile.proof_points %}
+          <div class="hero-proof">
+            <strong>{{ item.value }}</strong>
+            <span>{{ item.label }}</span>
+          </div>
+          {% endfor %}
         </div>
       </div>
 
@@ -40,7 +60,6 @@ layout: default
 </section>
 
 <!-- ── Research snapshots ───────────────────────────────────── -->
-{% assign highlights = site.data.research_highlights %}
 {% if highlights.size > 0 %}
 <section class="home-section home-section--spotlight" aria-labelledby="home-snapshots-heading">
   <div class="container">
@@ -54,7 +73,7 @@ layout: default
     </div>
 
     <div class="snapshot-grid">
-      {% for item in highlights %}
+      {% for item in highlights limit: 4 %}
       <article class="snapshot-card{% if forloop.first %} snapshot-card--lead{% endif %}">
         <div class="snapshot-card__media{% if item.media_style == 'banner' %} snapshot-card__media--banner{% endif %}">
           <img src="{{ item.image | relative_url }}"
@@ -89,6 +108,10 @@ layout: default
                target="_blank"
                rel="noopener">Code</a>
             {% endif %}
+            {% if item.project_url %}
+            <a href="{{ item.project_url | relative_url }}"
+               class="pub-badge pub-badge--muted">{{ item.project_label | default: "Project brief" }}</a>
+            {% endif %}
           </div>
 
           {% if item.source_note %}
@@ -98,12 +121,14 @@ layout: default
       </article>
       {% endfor %}
     </div>
+    <p class="home-section__more">
+      <a href="{{ '/research/' | relative_url }}">Browse the full research gallery &rarr;</a>
+    </p>
   </div>
 </section>
 {% endif %}
 
 <!-- ── Selected publications ─────────────────────────────────── -->
-{% assign featured_pubs = site.data.publications | where: "featured", true %}
 {% if featured_pubs.size > 0 %}
 <section class="home-section" aria-labelledby="home-pubs-heading">
   <div class="container">
@@ -120,40 +145,56 @@ layout: default
 </section>
 {% endif %}
 
-<!-- ── Featured projects ─────────────────────────────────────── -->
-{% assign featured_projects = site.data.projects | where: "featured", true %}
-{% if featured_projects.size > 0 %}
-<section class="home-section" aria-labelledby="home-projects-heading">
+<!-- ── Selected software ─────────────────────────────────────── -->
+{% if active_projects.size > 0 %}
+<section class="home-section" aria-labelledby="home-software-heading">
   <div class="container">
-    <h2 id="home-projects-heading" class="home-section__title">Featured Projects</h2>
-    <div class="project-grid">
-      {% for proj in featured_projects limit: 3 %}
-      <article class="project-card">
-        <h3 class="project-card__title">
-          {% if proj.url != "" %}
-            <a href="{{ proj.url }}" target="_blank" rel="noopener">{{ proj.name }}</a>
+    <div class="section-heading">
+      <p class="section-heading__eyebrow">Selected Software</p>
+      <h2 id="home-software-heading" class="home-section__title">Research software and reproducible analysis tooling</h2>
+      <p class="section-heading__deck">
+        Public repositories where available, with project briefs for internal or still-private work.
+      </p>
+    </div>
+
+    <div class="software-strip">
+      {% for proj in active_projects limit: 4 %}
+      {% assign brief_url = '/projects/#' | append: proj.slug | relative_url %}
+      <article class="software-card">
+        <div class="software-card__header">
+          <h3 class="software-card__title">
+            {% if proj.url != "" %}
+              <a href="{{ proj.url }}" target="_blank" rel="noopener">{{ proj.name }}</a>
+            {% elsif proj.github != "" %}
+              <a href="{{ proj.github }}" target="_blank" rel="noopener">{{ proj.name }}</a>
+            {% else %}
+              <a href="{{ brief_url }}">{{ proj.name }}</a>
+            {% endif %}
+          </h3>
+          {% if proj.repo_visibility == "private" %}
+          <span class="pub-badge pub-badge--muted">Private repo</span>
           {% elsif proj.github != "" %}
-            <a href="{{ proj.github }}" target="_blank" rel="noopener">{{ proj.name }}</a>
-          {% else %}
-            {{ proj.name }}
-          {% endif %}
-        </h3>
-        <p class="project-card__desc">{{ proj.description }}</p>
-        <div class="project-card__links">
-          {% if proj.github != "" %}
-            <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
-               target="_blank" rel="noopener">GitHub</a>
-          {% elsif proj.repo_visibility == "private" %}
-            <span class="pub-badge pub-badge--muted">Private repo</span>
-          {% endif %}
-          {% if proj.paper_url != "" %}
-            <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi"
-               target="_blank" rel="noopener">Paper</a>
-          {% elsif proj.paper_doi != "" %}
-            <a href="https://doi.org/{{ proj.paper_doi }}" class="pub-badge pub-badge--doi"
-               target="_blank" rel="noopener">Paper</a>
+          <span class="pub-badge pub-badge--code">Public code</span>
           {% endif %}
         </div>
+
+        <p class="software-card__desc">{{ proj.description }}</p>
+        <div class="software-card__links">
+          {% if proj.github != "" %}
+          <a href="{{ proj.github }}" class="pub-badge pub-badge--code" target="_blank" rel="noopener">GitHub</a>
+          {% endif %}
+          {% if proj.paper_url != "" %}
+          <a href="{{ proj.paper_url }}" class="pub-badge pub-badge--doi" target="_blank" rel="noopener">Paper</a>
+          {% endif %}
+          <a href="{{ brief_url }}" class="pub-badge pub-badge--muted">Brief</a>
+        </div>
+        {% if proj.tags.size > 0 %}
+        <div class="software-card__tags" aria-label="Tags">
+          {% for tag in proj.tags limit: 3 %}
+          <span class="pub-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
@@ -163,3 +204,59 @@ layout: default
   </div>
 </section>
 {% endif %}
+
+<!-- ── Recent talks ─────────────────────────────────────────── -->
+{% if invited_talks.size > 0 %}
+<section class="home-section" aria-labelledby="home-talks-heading">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-heading__eyebrow">Speaking</p>
+      <h2 id="home-talks-heading" class="home-section__title">Recent invited talks and seminars</h2>
+      <p class="section-heading__deck">
+        Recent invited presentations for public-health, genomics, and infectious-disease audiences.
+      </p>
+    </div>
+
+    <div class="talk-strip">
+      {% for talk in invited_talks limit: 3 %}
+      <article class="talk-card">
+        <p class="talk-card__type">{{ talk.type | capitalize }} · {{ talk.year }}</p>
+        <h3 class="talk-card__title">{{ talk.title }}</h3>
+        <p class="talk-card__venue">{{ talk.event }}{% if talk.location %} · {{ talk.location }}{% endif %}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="home-section__more">
+      <a href="{{ '/speaking/' | relative_url }}">View talks and service &rarr;</a>
+    </p>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Contact / collaborate ────────────────────────────────── -->
+<section class="home-section home-section--contact" aria-labelledby="home-contact-heading">
+  <div class="container">
+    <div class="contact-card">
+      <div>
+        <p class="section-heading__eyebrow">Contact</p>
+        <h2 id="home-contact-heading" class="home-section__title">Collaborate, invite, or get in touch</h2>
+        <p class="contact-card__lead">{{ profile.currently_open_to }}</p>
+        <ul class="contact-card__themes">
+          {% for item in profile.collaboration_themes %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="contact-panel">
+        <p class="contact-panel__location">{{ profile.contact.location }}</p>
+        <a href="mailto:{{ profile.contact.professional_email }}" class="btn btn--primary">{{ profile.contact.professional_email }}</a>
+        <a href="{{ profile.contact.linkedin_url }}" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ profile.contact.github_url }}" class="btn btn--outline" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ profile.contact.scholar_url }}" class="btn btn--outline" target="_blank" rel="noopener">Scholar</a>
+        <a href="{{ profile.contact.orcid_url }}" class="btn btn--outline" target="_blank" rel="noopener">ORCID</a>
+        <a href="{{ '/about/' | relative_url }}" class="btn btn--outline">About & bios</a>
+      </div>
+    </div>
+  </div>
+</section>

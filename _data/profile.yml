@@ -1,0 +1,74 @@
+headline: "Computational biologist working at the intersection of pathogen genomics, quantitative modelling, and scientific software."
+
+current_role:
+  title: "Senior Genomic Surveillance Data Scientist"
+  institution: "Wellcome Sanger Institute"
+  institution_url: "https://www.sanger.ac.uk/"
+  location: "Hinxton, Cambridge, UK"
+
+education:
+  degree: "PhD, Biological Sciences"
+  institution: "University of Cambridge"
+  institution_url: "https://www.cam.ac.uk/"
+  years: "2018-2023"
+
+contact:
+  professional_email: "ab69@sanger.ac.uk"
+  personal_email: "Andrew.balmer@hotmail.co.uk"
+  github_url: "https://github.com/AndrewBalmer"
+  linkedin_url: "https://linkedin.com/in/andrew-balmer-7657b35b"
+  scholar_url: "https://scholar.google.com/citations?user=fff8gqUAAAAJ"
+  orcid_url: "https://orcid.org/0000-0001-7446-3428"
+  location: "Cambridge, UK"
+
+currently_open_to: >
+  Collaborative research, scientific software projects, invited talks, and
+  computational biology or genomics roles that combine rigorous quantitative
+  work with real-world public-health impact.
+
+collaboration_themes:
+  - "Pathogen genomic surveillance and infectious disease data science"
+  - "Antimicrobial resistance modelling and genotype-phenotype analysis"
+  - "Reproducible bioinformatics workflows, pipelines, and scientific software"
+  - "Translational research at the interface of method development and public health"
+
+selected_collaborators:
+  - "Gemma G. R. Murray"
+  - "Lucy A. Weinert"
+  - "Jacob Almagro Garcia"
+  - "Richard D. Pearson"
+  - "Cristina V. Ariani"
+
+proof_points:
+  - value: "Wellcome Sanger"
+    label: "current institute"
+  - value: "Cambridge PhD"
+    label: "quantitative biology training"
+  - value: "BBSRC funded"
+    label: "doctoral award"
+  - value: "Invited talks"
+    label: "CDC, UKHSA, Sanger"
+
+bios:
+  short: >
+    Andrew Balmer is a computational biologist and genomic data scientist whose
+    work focuses on pathogen genomics, antimicrobial resistance, and
+    reproducible scientific software for global health research.
+  press: >
+    Andrew Balmer is a computational biologist at the Wellcome Sanger
+    Institute. His research combines large-scale pathogen genomics,
+    multivariate statistical modelling, and scientific software to study
+    infectious disease evolution, resistance surveillance, and translational
+    decision-making in public health.
+  talks: >
+    Andrew Balmer is a computational biologist and genomic data scientist at
+    the Wellcome Sanger Institute. He develops quantitative methods and
+    reproducible workflows for pathogen genomics, with recent work spanning
+    artemisinin resistance surveillance, antimicrobial resistance cartography,
+    and vaccine-target discovery.
+  jobs: >
+    Andrew Balmer is a computational biologist trained at the University of
+    Cambridge and currently based at the Wellcome Sanger Institute. He works
+    across genomic epidemiology, quantitative modelling, and scientific
+    software, with an emphasis on building reproducible tools and analyses that
+    support high-impact research and public-health applications.

@@ -7,10 +7,12 @@ body {
   color: $c-text;
   background: $c-bg;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 // ─── Headings ─────────────────────────────────────────────────
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
   font-weight: 700;
   line-height: $lh-tight;
   color: $c-text;

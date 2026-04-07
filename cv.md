@@ -8,14 +8,22 @@ description: "Curriculum vitæ of Andrew Balmer — positions, education, public
 
 <div class="cv-download-bar">
   <p class="cv-download-bar__text">
-    Full curriculum vitæ available as a downloadable Word document.
+    Full curriculum vitæ available as downloadable PDF and Word documents.
   </p>
-  <a href="{{ '/assets/cv/andrew_balmer_cv.docx' | relative_url }}"
-     class="btn btn--primary"
-     target="_blank"
-     rel="noopener">
-    Download CV (DOCX)
-  </a>
+  <div class="pub-links" style="margin: 0;">
+    <a href="{{ '/assets/cv/andrew_balmer_cv.pdf' | relative_url }}"
+       class="btn btn--primary"
+       target="_blank"
+       rel="noopener">
+      Download CV (PDF)
+    </a>
+    <a href="{{ '/assets/cv/andrew_balmer_cv.docx' | relative_url }}"
+       class="btn btn--outline"
+       target="_blank"
+       rel="noopener">
+      Download CV (DOCX)
+    </a>
+  </div>
 </div>
 
 <!-- ── Positions ────────────────────────────────────────────── -->
