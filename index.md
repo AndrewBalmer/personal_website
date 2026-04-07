@@ -4,7 +4,7 @@ title: Home
 avatar: /ab69.jpg
 hero_title: Andrew Balmer
 hero_sub: Computational Biologist, Genomic Data Scientist, and Quantitative Researcher
-description: "Andrew Balmer is a computational biologist at the Wellcome Sanger Institute working on pathogen genomics, antimicrobial resistance, and scientific software."
+description: "I work on pathogen genomics, antimicrobial resistance, and scientific software at the Wellcome Sanger Institute."
 ---
 
 I work on large-scale pathogen genomics, statistical modelling, and infectious

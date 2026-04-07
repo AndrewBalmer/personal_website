@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-description: "Peer-reviewed publications by Andrew Balmer in computational biology, genomics, and machine learning."
+description: "Peer-reviewed publications and preprints from my work in computational biology, genomics, and quantitative methods."
 ---
 
 {% assign pubs = site.data.publications %}

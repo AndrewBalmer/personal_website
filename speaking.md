@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Speaking & Service
-description: "Talks, posters, and academic service by Andrew Balmer."
+description: "Talks, posters, and academic service."
 ---
 
 {% assign talks_by_year = site.data.talks | sort: "year" | reverse | group_by: "year" %}

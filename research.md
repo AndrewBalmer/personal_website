@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research Gallery
-description: "Figure-led gallery of recent research by Andrew Balmer across genomics, resistance surveillance, and quantitative biology."
+description: "Figure-led gallery of my recent research across genomics, resistance surveillance, and quantitative biology."
 ---
 
 {% assign highlights = site.data.research_highlights %}

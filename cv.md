@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CV
-description: "Curriculum vitæ of Andrew Balmer — positions, education, publications, and awards."
+description: "My curriculum vitæ — positions, education, publications, and awards."
 ---
 
 {% assign cv = site.data.cv %}

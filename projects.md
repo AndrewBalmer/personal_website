@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-description: "Software, tools, and pipelines developed by Andrew Balmer."
+description: "Software, tools, and pipelines I have developed or contributed to."
 ---
 
 {% assign active   = site.data.projects | where: "status", "active"   | sort: "year" | reverse %}

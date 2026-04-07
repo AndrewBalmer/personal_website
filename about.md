@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: "Short bios, profile information, and contact details for Andrew Balmer."
+description: "Short bio, profile information, and contact details."
 ---
 
 {% assign profile = site.data.profile %}

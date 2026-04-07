@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Now
-description: "What Andrew Balmer is currently working on."
+description: "What I'm currently working on."
 updated: "April 2026"
 ---
 
