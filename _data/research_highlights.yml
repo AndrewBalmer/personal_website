@@ -1,9 +1,9 @@
 - category: "Genomic surveillance"
   title: "Tracking artemisinin resistance across more than 100,000 samples"
   summary: >
-    A global synthesis linking parasite genetics, geography, and resistance
-    dynamics at surveillance scale, with an emphasis on signals that matter for
-    real-world genomic monitoring.
+    Large-scale malaria surveillance project synthesising parasite genetics,
+    geography, and resistance dynamics to clarify how artemisinin resistance is
+    changing across global populations.
   image: "/assets/images/research/artemisinin-resistance-map.jpg"
   alt: "Global resistance map figure from the eLife paper on artemisinin resistance."
   paper_url: "https://elifesciences.org/articles/105544"
@@ -18,12 +18,13 @@
 - category: "Quantitative methods"
   title: "AMR cartography for multivariate resistance phenotypes"
   summary: >
-    Figure 1 from the AMR Cartography manuscript, showing the phenotype map in
-    the context of the underlying MIC correlations and calibrated biplot view.
+    First-author methods project building a general framework for analysing
+    multivariate drug-resistance phenotypes instead of treating each drug as an
+    isolated outcome.
   image: "/assets/images/research/amr-cartography-figure-1.png"
   alt: "Figure 1 from the AMR Cartography manuscript."
   paper_url: "https://www.biorxiv.org/content/10.1101/2025.09.12.675231v1"
-  paper_label: "Figure 1"
+  paper_label: "bioRxiv 2025"
   project_url: "/projects/#antimicrobial-resistance-cartography"
   project_label: "Project brief"
   code_url: "https://github.com/AndrewBalmer/AMR-cartography"
@@ -35,28 +36,30 @@
 - category: "Resistance trajectories"
   title: "Logistic trajectories for rising kelch13 resistance"
   summary: >
-    Figure-led view of how WHO-validated and candidate kelch13 markers have
-    risen across Southeast Asia and parts of East and Northeast Africa.
+    Follow-up analysis from the global artemisinin-resistance study, focused on
+    how validated and candidate kelch13 markers have risen across Southeast
+    Asia and parts of East and Northeast Africa.
   image: "/assets/images/research/artemisinin-figure-8.jpg"
   alt: "Figure 8 from the eLife paper on artemisinin resistance."
   paper_url: "https://elifesciences.org/articles/105544"
-  paper_label: "Figure 8"
+  paper_label: "eLife 2025"
   project_url: "/publications/#global-artemisinin-resistance"
   project_label: "Publication details"
   source_note: "Figure 8 from Understanding the global rise of artemisinin resistance"
-  metric_value: "Figure 8"
-  metric_label: "logistic fits"
+  metric_value: "Regional"
+  metric_label: "resistance trajectories"
   media_style: "cover"
 
 - category: "Vaccine target discovery"
   title: "Pf-PeptideFilter turns peptide prioritisation into an interactive workflow"
   summary: >
-    Interface-level view of the filtering workflow used to move from large
-    peptide catalogues to more interpretable malaria vaccine candidates.
+    Software-and-analysis project for prioritising malaria peptide vaccine
+    candidates by combining epitope prediction, filtering diagnostics, and
+    population-scale genomic evidence in one public workflow.
   image: "/assets/images/research/pf-peptidefilter-figure-2.png"
   alt: "Figure 2 from the Pf-PeptideFilter bioRxiv preprint."
   paper_url: "https://www.biorxiv.org/content/10.64898/2025.12.15.694343v2"
-  paper_label: "Figure 2"
+  paper_label: "bioRxiv 2025"
   code_url: "https://github.com/malariagen/pf-peptidefilter"
   project_url: "/projects/#pf-peptidefilter"
   project_label: "Project brief"
@@ -68,12 +71,13 @@
 - category: "Zoonotic emergence"
   title: "Genome reduction tracks pathogenicity in pig-associated S. suis"
   summary: >
-    Comparative view of how genome size and lineage-specific trajectories
-    align with disease association in a zoonotic pig pathogen.
+    Comparative genomics project on the emergence and diversification of
+    zoonotic Streptococcus suis lineages within intensively farmed pigs, with a
+    focus on pathogenicity, lineage structure, and long-term evolution.
   image: "/assets/images/research/pigs-pnas-figure-5.png"
   alt: "Figure 5 from the PNAS paper on zoonotic pathogen emergence in intensively farmed pigs."
   paper_url: "https://www.repository.cam.ac.uk/handle/1810/361461"
-  paper_label: "Figure 5"
+  paper_label: "PNAS 2023"
   project_url: "/publications/#zoonotic-pathogen-diversification"
   project_label: "Publication details"
   source_note: "Figure 5 from The emergence and diversification of a zoonotic pathogen from within the microbiota of intensively farmed pigs"
@@ -84,12 +88,13 @@
 - category: "Evolutionary dynamics"
   title: "Mutation-rate shifts mirror ecological change"
   summary: >
-    Comparative summary of how mutation rate, genome size, and disease
-    association separate across Streptococcus suis clades.
+    Earlier Streptococcus suis project linking mutation-rate dynamics,
+    ecological change, and long-term pathogen evolution across divergent
+    lineages.
   image: "/assets/images/research/mutation-rate-dynamics-figure-1.png"
   alt: "Figure 1 from the PLOS Genetics paper on mutation rate dynamics in an emerging zoonotic pathogen."
   paper_url: "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1009864"
-  paper_label: "Figure 1"
+  paper_label: "PLOS Gen. 2021"
   project_url: "/publications/#mutation-rate-dynamics"
   project_label: "Publication details"
   source_note: "Figure 1 from Mutation rate dynamics reflect ecological changes in an emerging zoonotic pathogen"
@@ -100,15 +105,16 @@
 - category: "AMR in S. suis"
   title: "Resistant PBP types align with elevated beta-lactam MICs"
   summary: >
-    Figure-led snapshot of the relationship between PBP-type distance and
-    beta-lactam susceptibility in emerging zoonotic Streptococcus suis lineages.
+    Recent collaborative paper on emerging zoonotic and multidrug-resistant
+    Streptococcus suis lineages, linking capsule switching, AMR acquisition,
+    and beta-lactam phenotype shifts.
   image: "/assets/images/research/ssuis-lineages-figure-5.png"
   alt: "Figure 5 from the Clinical Microbiology and Infection paper on zoonotic and multidrug-resistant Streptococcus suis lineages."
   paper_url: "https://www.repository.cam.ac.uk/handle/1810/400512"
-  paper_label: "Figure 5"
+  paper_label: "CMI 2026"
   project_url: "/publications/#zoonotic-streptococcus-suis-lineages"
   project_label: "Publication details"
   source_note: "Figure 5 from Emergence of novel zoonotic and multi-drug resistant Streptococcus suis lineages"
-  metric_value: "Figure 5"
-  metric_label: "PBP types"
+  metric_value: "Beta-lactam"
+  metric_label: "phenotype shifts"
   media_style: "cover"
