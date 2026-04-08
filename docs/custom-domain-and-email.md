@@ -1,3 +1,11 @@
+---
+layout: page
+title: Custom domain and email setup
+description: "Internal setup notes for the website custom domain and email configuration."
+sitemap: false
+robots: noindex, nofollow
+---
+
 # Custom Domain And Email Setup
 
 This repo is ready for a custom domain, but the final switch still needs a

@@ -25,6 +25,12 @@
 <meta name="description" content="{{ meta_description }}">
 <meta name="theme-color" content="{{ site.theme_color }}">
 <meta name="author" content="{{ site.author.name }}">
+{% if page.robots and page.robots != "" %}
+<meta name="robots" content="{{ page.robots }}">
+{% endif %}
+{% if site.search_console.google_site_verification and site.search_console.google_site_verification != "" %}
+<meta name="google-site-verification" content="{{ site.search_console.google_site_verification }}">
+{% endif %}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

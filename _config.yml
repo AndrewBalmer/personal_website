@@ -51,6 +51,9 @@ analytics:
   plausible_domain: ""
   ga4_id: ""
 
+search_console:
+  google_site_verification: ""
+
 header_pages:
   - publications.md
   - projects.md
