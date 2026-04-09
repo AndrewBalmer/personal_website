@@ -21,6 +21,7 @@ updated: "April 2026"
 - Co-led development of [Pf-PeptideFilter](https://pf-peptidefilter.streamlit.app/) (formerly PepExplorer), a peptide vaccine discovery platform integrating genomic and immunological evidence.
 - Continued building out current work in the Bryant Group while extending malaria-genomics and AMR-methods projects from earlier Cambridge and Sanger collaborations.
 - Delivered invited talks for public-health and genomics audiences, including CDC, UKHSA, and MalariaGEN.
+- Built this website with help from Codex/ChatGPT over roughly two weeks and 20+ commits, using iterative prompts plus curated links, paper figures, CV files, talk links, and project metadata.
 
 ## Reading
 
