@@ -25,10 +25,10 @@ description: "Talks, posters, and academic service."
     <p class="talk-item__venue">
       {{ talk.event }}{% if talk.location %} · {{ talk.location }}{% endif %}
     </p>
-    {% if talk.slides or talk.video %}
+    {% if talk.slides != "" or talk.video != "" %}
     <div class="pub-links" style="margin-top:0.35rem;">
-      {% if talk.slides %}<a href="{{ talk.slides }}" class="pub-badge" target="_blank" rel="noopener">Slides</a>{% endif %}
-      {% if talk.video  %}<a href="{{ talk.video  }}" class="pub-badge pub-badge--preprint" target="_blank" rel="noopener">Video</a>{% endif %}
+      {% if talk.slides != "" %}<a href="{{ talk.slides }}" class="pub-badge" target="_blank" rel="noopener">Slides</a>{% endif %}
+      {% if talk.video != ""  %}<a href="{{ talk.video  }}" class="pub-badge pub-badge--preprint" target="_blank" rel="noopener">Video</a>{% endif %}
     </div>
     {% endif %}
   </li>
