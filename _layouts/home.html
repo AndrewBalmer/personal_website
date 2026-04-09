@@ -206,6 +206,9 @@ layout: default
 
         <p class="software-card__desc">{{ proj.description }}</p>
         <div class="software-card__links">
+          {% if proj.url != "" %}
+          <a href="{{ proj.url }}" class="pub-badge" target="_blank" rel="noopener">{{ proj.url_label | default: "Website" }}</a>
+          {% endif %}
           {% if proj.github != "" %}
           <a href="{{ proj.github }}" class="pub-badge pub-badge--code" target="_blank" rel="noopener">GitHub</a>
           {% endif %}

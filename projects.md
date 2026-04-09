@@ -30,6 +30,10 @@ description: "Software, tools, and pipelines I have developed or contributed to.
     </h2>
     <p class="project-card__desc">{{ proj.description }}</p>
     <div class="project-card__links">
+      {% if proj.url != "" %}
+        <a href="{{ proj.url }}" class="pub-badge"
+           target="_blank" rel="noopener">{{ proj.url_label | default: "Website" }}</a>
+      {% endif %}
       {% if proj.github != "" %}
         <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
            target="_blank" rel="noopener">GitHub</a>
@@ -42,10 +46,6 @@ description: "Software, tools, and pipelines I have developed or contributed to.
       {% elsif proj.paper_doi != "" %}
         <a href="https://doi.org/{{ proj.paper_doi }}" class="pub-badge pub-badge--doi"
            target="_blank" rel="noopener">Paper</a>
-      {% endif %}
-      {% if proj.url != "" %}
-        <a href="{{ proj.url }}" class="pub-badge"
-           target="_blank" rel="noopener">Website</a>
       {% endif %}
       <a href="{{ brief_href }}" class="pub-badge pub-badge--muted">Project brief</a>
     </div>
@@ -71,6 +71,10 @@ description: "Software, tools, and pipelines I have developed or contributed to.
         <h3 class="project-detail__title">{{ proj.name }}</h3>
       </div>
       <div class="project-card__links">
+        {% if proj.url != "" %}
+          <a href="{{ proj.url }}" class="pub-badge"
+             target="_blank" rel="noopener">{{ proj.url_label | default: "Website" }}</a>
+        {% endif %}
         {% if proj.github != "" %}
           <a href="{{ proj.github }}" class="pub-badge pub-badge--code"
              target="_blank" rel="noopener">GitHub</a>
