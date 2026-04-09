@@ -88,8 +88,10 @@ def anchor_map(site_dir: Path) -> dict[Path, set[str]]:
 def resolve_internal(site_dir: Path, current: Path, href: str) -> tuple[Path | None, str | None]:
     fragment = None
     path_part = href
-    if "#" in href:
-        path_part, fragment = href.split("#", 1)
+    if "#" in path_part:
+        path_part, fragment = path_part.split("#", 1)
+    if "?" in path_part:
+        path_part = path_part.split("?", 1)[0]
 
     if not path_part:
         return current.resolve(), fragment
